@@ -655,7 +655,7 @@ header, footer, section {
 }
 /* typography */
 body,html{
-    font-family: 'ivy epic';
+    font-family: 'ivymode';
     font-weight:  light;
     font-size: 1rem;
     overflow-x: hidden;
@@ -667,6 +667,7 @@ body,html{
 
 h1,h2,h3,h4,p {
     margin-bottom: 1.5em;
+    font-family: 'ivypresto-display';
 }
 h1,h2,h3,h4 {
 font-size: 1.5rem;
@@ -689,7 +690,7 @@ body svg,body img {
 }
 
 .heading-block-lg {
-font-family: ivyepic;
+font-family: 'ivymode';
 font-weight: 800;
 letter-spacing: -0.2em;
 font-size: 4rem;
@@ -704,7 +705,7 @@ font-size: 1.8rem;
 }
 
 .sub-heading {
-    font-family: 'ivy-epic';
+    font-family: 'ivymode';
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform:  uppercase;
