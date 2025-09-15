@@ -134,10 +134,10 @@ sleep-grid:
 
 <section>
     <div class="max-w-screen-xl mx-auto grid grid-cols-3 gap-8">
-        <div class="">
+        <div class="grid gap-4">
             {% for image in page.sticky-scroll-section %}
-                <div class="aspect-square relative w-full">
-                    <img class="inset-0 h-full w-full absolute" src="{{image.image}}" alt="image.alt">
+                <div class="relative w-full">
+                    <img class="w-full" src="{{image.image}}" alt="image.alt">
 
                 </div>
             {% endfor %}
