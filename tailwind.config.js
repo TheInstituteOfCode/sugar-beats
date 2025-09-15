@@ -7,7 +7,15 @@ module.exports = {
     './*.{html,js,md}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        blue: 'var(--blue)',
+        cream: 'var(--cream)',
+        yellow: 'var(--yellow)',
+        rust: 'var(--rust)',
+        
+      }
+    },
   },
   plugins: [],
 }

@@ -10,7 +10,74 @@
 </head>
 
 <body>
+    <header class="py-8 bg-cream">
+        <div class=" grid grid-cols-3 max-w-screen-xl mx-auto">
+            <div class="flex items-center">
+                 <div class="burger-button">
+                    <span class="burger-top"></span>
+                    <span class="burger-middle"></span>
+                    <span class="burger-bottom"></span>
+                </div>
+                <div class="burger-menu">
+                    <a href="">Home</a>
+                    <a href="">Food</a>
+                    <a href="">Drink</a>
+                </div>
+            </div>
+            <div>
+                <div class="w-[16rem]">
+                    {% include svg-logo.html %}
+
+                </div>
+            </div>
+            <div class="flex justify-end items-center">
+                    <a class="button bg-blue text-white" href="/booking">Book now</a>
+            </div>
+        </div>
+
+    </header>
     {{content}}
+
+    
+<script>
+  const burgerButton = document.querySelector('.burger-button');
+  const burgerMenu = document.querySelector('.burger-menu');
+
+  function toggleBurger() {
+    burgerButton.classList.toggle('active');
+    burgerMenu.classList.toggle('active');
+
+    // this.classList.toggle('active');
+
+    // this.querySelector('.burger-menu').classList.add('active');
+    
+  }
+
+  burgerButton.addEventListener('click', toggleBurger);
+
+
+  const carousels = document.querySelectorAll('.carousels')
+
+  carousels.forEach(carousel => {
+    let mainImage = carousel.querySelector('.main-image')
+    let altImages = carousel.querySelectorAll('.carosel-alt-images img')
+    let focus = 0
+    console.log(focus, altImages.length,mainImage.attributes) 
+
+    function nextImage() {
+        focus = (focus + 1) % altImages.length
+        console.log(focus, altImages[focus].attributes.src,mainImage.attributes.src)
+        mainImage.src = altImages[focus].src
+        mainImage.alt = altImages[focus].alt
+        console.log(focus, altImages[focus].attributes.src,mainImage.attributes.src)
+
+    }
+
+    setInterval(nextImage,1000)
+  })
+</script>
+
+
 </body>
 
 </html>

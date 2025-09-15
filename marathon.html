@@ -1,0 +1,189 @@
+---
+layout: default
+title: Homepage
+sticky-scroll-section:
+    -   image: /uploads/food-1.png
+        alt: food
+    -   image: /uploads/2-tree-plus-sunset.png
+        alt: trees and sun function
+    -   image: /uploads/dive.png
+        alt: div
+    -   image: /uploads/2-tree-plus-sunset.png
+        alt: trees and sun function
+    -   image: /uploads/food-1.png
+        alt: food
+    -   image: /uploads/dive.png
+        alt: div
+    -   image: /uploads/food-1.png
+        alt: food
+    -   image: /uploads/2-tree-plus-sunset.png
+        alt: trees and sun function
+    -   image: /uploads/dive.png
+        alt: div
+    -   image: /uploads/2-tree-plus-sunset.png
+        alt: trees and sun function
+    -   image: /uploads/food-1.png
+        alt: food
+    -   image: /uploads/dive.png
+        alt: div
+    -   image: /uploads/food-1.png
+        alt: food
+    -   image: /uploads/2-tree-plus-sunset.png
+        alt: trees and sun function
+    -   image: /uploads/dive.png
+        alt: div
+    -   image: /uploads/2-tree-plus-sunset.png
+        alt: trees and sun function
+    -   image: /uploads/food-1.png
+        alt: food
+    -   image: /uploads/dive.png
+        alt: div
+sleep-grid:
+    -   heading: Ocean View Room
+        sub-heading: HOTEL INDIGO BINTAN
+        image: /uploads/food-1.png
+        description: A spacious room with space to explore and a private bathroom. 
+    -   heading: Ocean View Room
+        sub-heading: HOTEL INDIGO BINTAN
+        image: /uploads/food-1.png
+        description: A spacious room with space to explore and a private bathroom. 
+    -   heading: Ocean View Room
+        sub-heading: HOTEL INDIGO BINTAN
+        image: /uploads/food-1.png
+        description: A spacious room with space to explore and a private bathroom. 
+    -   heading: Ocean View Room
+        sub-heading: HOTEL INDIGO BINTAN
+        image: /uploads/food-1.png
+        description: A spacious room with space to explore and a private bathroom. 
+
+---
+
+
+
+<section class="bg-cream">
+        <div class="max-w-screen-xl mx-auto  py-[20%] text-center text-blue" style="background-image: url();">
+            <h3 class="sub-heading"> BINTAN MARATHON  9 - 11 NOV 2025</h3>
+            <h2 class="heading-xl">Join in the fun and get away for the weekend to a tropical island escape, running through pristine jungle & mangroves.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>  
+</section>
+
+
+<section class="bg-blue text-cream">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-12">
+            <div class="col-span-5 row-span-3 relative" style="grid-column-start: 1;
+  grid-row-start: 1;">
+                <img src="/uploads/dive.png" alt="">
+                <div class="absolute w-[50%] -right-[5%] -bottom-[15%]">
+                    <img src="/uploads/dive.png" alt="">
+                </div>
+            </div>
+            <div class="col-span-5">
+                {% include join-the-race.html %}
+            </div>
+            <div class="col-span-4" style="grid-column-start: 8;
+  position: relative;
+  top: -8rem;">
+                {% include weekend.html %}
+            </div>
+            <!-- spacer -->
+             <div class="col-span-1"></div>
+
+             <div class=" col-start-7 col-span-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p><a href="/book" class="button border-cream">Book your day pass</a></p>
+             </div>
+        </div>  
+</section>
+
+<section class="bg-blue text-cream">
+        <div class="max-w-screen-xl mx-auto grid grid-cols-12">
+            <div class="col-span-5">
+                <div class="text-right" >
+                    {% include recovery.html %}
+                </div>
+                <div >
+                    {% include lounge.html %}
+                </div>
+            </div>
+            <div class="col-start-7 col-span-6 row-span-2">
+                <!-- temp aspec div reomve once correct image added -->
+                 <div class="relative" style="aspect-ratio: 676/515;">
+                    <img src="/uploads/dive.png" class="absolute w-full h-full inset-0" alt="">
+                 </div>
+            </div>
+            <div class="col-span-4 col-start-2">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p><a href="/" class="button uppercase">come for dinner</a></p>
+            </div>
+        </div>  
+</section>
+
+<section class="bg-yellow text-white">
+        <div class="max-w-screen-xl mx-auto">
+            <h3>A WEEKEND AWAY</h3>
+            <video autoplay muted>
+                <source src="/test-50k-kbs-wave-hb.mp4" type="video/mp4">
+            </video>
+            <h3>
+                AT HOTEL INDIGO BINTAN
+            </h3>
+
+        </div>
+</section>
+
+<section>
+    <div class="max-w-screen-xl mx-auto grid grid-cols-3 gap-8">
+        <div class="">
+            {% for image in page.sticky-scroll-section %}
+                <div class="aspect-square relative w-full">
+                    <img class="inset-0 h-full w-full absolute" src="{{image.image}}" alt="image.alt">
+
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-span-2">
+            <div class="min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
+                <div class="text-right">
+                    <h3>BINTAN LAGOI BEACH</h3>
+                </div>
+                
+                <div class="max-w-[550px]">
+                    <h2>Hotel Indigo</h2>
+                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+                    <P> <a href="" class="button">TALK TO THE TEAM</a> <a class="button ml-6 inline-block" href="BOOK NOW">BOOK NOW</a></P>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="bg-blue text-cream">
+    <div class="max-w-screen-xl mx-auto">
+        <div class="flex justify-between">
+            <h2>sleep</h2>
+            <p><a href="/temp">sleep a little longer</a></p>
+        </div>
+        <div class="flex flex-nowrap overflow-x-scroll gap-8">
+            {% for item in page.sleep-grid %}
+            <div class="rounded-3xl overflow-hidden bg-cream text-blue">
+                <div class="relative overflow-hidden aspect-square round-t-3xl">
+                    <img src="{{item.image}}" alt="{{image.alt}}">
+                </div>
+                <div class="p-4">
+                    <h3>
+                        {{item.sub-heading}}
+                    </h3>
+                    <h3>{{item.heading}}</h3>
+                    <p>
+                        {{item.description}}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>  
+</section>  

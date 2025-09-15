@@ -9,3 +9,178 @@
 @tailwind utilities;
 
 /* Custom CSS */
+
+
+:root {
+    --blue: #2F5992;
+    --cream: #FEFAEF;
+    --yellow: #F6D265;
+    --rust: #CC4829;
+}
+
+header, footer, section {
+    padding: 15% 5%;
+}
+/* typography */
+body,html{
+    font-family: 'ivy epic';
+    font-weight:  light;
+    font-size: 1rem;
+    overflow-x: hidden;
+    width: 100vw;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+h1,h2,h3,h4,p {
+    margin-bottom: 1.5em;
+}
+h1,h2,h3,h4 {
+font-size: 1.5rem;
+}
+
+
+.text-2xl{font-size: 5rem;} 
+.text-xl{font-size:  4rem ;} 
+.text-lg{font-size:  3rem ;}
+.text-md {font-size: 2rem;} 
+
+
+p{
+    font-size: 1rem;
+}
+
+body svg,body img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+.heading-block-lg {
+font-family: ivyepic;
+font-weight: 800;
+letter-spacing: -0.2em;
+font-size: 4rem;
+}
+
+.heading-block-md {
+font-size: 3rem; 
+}
+
+.heading-block-sm {
+font-size: 1.8rem;
+}
+
+.sub-heading {
+    font-family: 'ivy-epic';
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform:  uppercase;
+}
+
+
+.handwriting {
+    font-family: Adobe Handwriting
+}
+
+.heading-2xl {
+    font-size: 5rem;
+}
+
+
+.button {
+    border: 1px solid;
+    border-radius: 100rem;
+    padding: .5rem 3rem ;
+}
+
+.button.button-no-radius {
+    border-radius: 0;
+    border: 0 solid;
+}
+
+/* burger */
+
+
+ .burger-button {
+  position: relative;
+  z-index: 9;
+  padding: 2rem 0;
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 6rem;
+  border: 2px solid black;
+  background-color: black;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: green;
+  background-color:#383;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 2rem;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 2rem;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: flex;
+    position: fixed;
+    top: 0vh;
+    left:100vw;
+    right: -100vw;
+    bottom: 0vh;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+  transition:1s;
+    align-content:space-around;
+  justify-content:space-around;
+  flex-direction:column;
+}
+.burger-menu.active{
+  left:50vw;
+  right:0;
+}
+.burger-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #C3BFBC;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  display:block;
+  padding:5px 15px;
+  text-align:center;
+  white-space:nowrap;
+}
