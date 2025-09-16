@@ -56,9 +56,9 @@ sleep-grid:
         </div>
 </section>
 
-<section class="bg-cream min-h-[100vh] flex items-center bg-cover" style="background-image:url('/uploads/palm-trees.jpg')">
+<section class="bg-cream min-h-[100vh] flex items-center bg-cover bg-center" style="background-image:url('/uploads/palm-trees.jpg')">
         <div class="max-w-screen-lg mx-auto text-center text-blue mb-20" style="background-image: url();">
-            <h3 class="sub-heading heading-block text-md">AN OCEANFRONT BEACH CLUB IN BINTAN</h3>
+            <h3 class="sub-heading heading-block text-sm">AN OCEANFRONT BEACH CLUB IN BINTAN</h3>
             <h2 class="text-lg">Sugarbeats is Bintan’s best beach club, a spot to eat, drink and play and watch the world go past all with a dreamy ocean backdrop. </h2>
             <p>Set on one of Bintan’s most stunning stretches of beach, SugarBeats blends ocean views, curated music, and elevated dining into one unforgettable experience. By day, unwind by the water. By night, let the music move you. </p>
         </div>  
@@ -171,7 +171,7 @@ sleep-grid:
         </div>
         <div class="flex flex-nowrap overflow-x-scroll gap-8">
             {% for item in page.sleep-grid %}
-            <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue w-1/4">
+            <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 md:w-1/4">
                 <div class="relative overflow-hidden aspect-square round-t-3xl">
                     <img src="{{item.image}}" alt="{{image.alt}}">
                 </div>

@@ -2,64 +2,46 @@
 layout: default
 title: whats on at sugar beats
 wedding-grid:
-    -   heading: Ocean View Room
-        image: /uploads/food-1.png
-    -   heading: Ocean View Room
-        image: /uploads/food-1.png
-    -   heading: Ocean View Room
-        image: /uploads/food-1.png
-    -   heading: Ocean View Room
-        image: /uploads/food-1.png
+    -   heading: Sekasih Pavilion
+        image: /uploads/events-gallery-3.jpg
+    -   heading: Oceanview Swimming Pools
+        image: /uploads/events-gallery-1.jpg
+    -   heading: Exclusive Beach Club Access
+        image: /uploads/events-gallery-4.jpg
+    -   heading: Stunning Lagoi Beach
+        image: /uploads/events-gallery-2.jpg
 sticky-scroll-celebrations:
-    -   image: /uploads/food-1.png  
+    -   image: /uploads/event-3.jpg
         alt: food
-    -   image: /uploads/2-tree-plus-sunset.png
+    -   image: /uploads/event-1.jpg
         alt: trees and sun function
-    -   image: /uploads/dive.png
+    -   image: /uploads/event-2.jpg
         alt: div
-    -   image: /uploads/2-tree-plus-sunset.png
+    -   image: /uploads/event-4.jpg
         alt: trees and sun function
-    -   image: /uploads/food-1.png
-        alt: food
-    -   image: /uploads/food-1.png
-        alt: food
-    -   image: /uploads/2-tree-plus-sunset.png
-        alt: trees and sun function
-    -   image: /uploads/dive.png
-        alt: div
-    -   image: /uploads/2-tree-plus-sunset.png
-        alt: trees and sun function
-    -   image: /uploads/food-1.png
-        alt: food
-
 sticky-scroll-events:
-    -   image: /uploads/food-1.png  
-        alt: food
-    -   image: /uploads/2-tree-plus-sunset.png
-        alt: trees and sun function
-    -   image: /uploads/dive.png
-        alt: div
-    -   image: /uploads/2-tree-plus-sunset.png
-        alt: trees and sun function
-    -   image: /uploads/food-1.png
-        alt: food
-    -   image: /uploads/food-1.png
-        alt: food
-    -   image: /uploads/2-tree-plus-sunset.png
-        alt: trees and sun function
-    -   image: /uploads/dive.png
-        alt: div
-    -   image: /uploads/2-tree-plus-sunset.png
-        alt: trees and sun function
-    -   image: /uploads/food-1.png
-        alt: food
+    -   image: /uploads/corporate-1.jpg
+        alt: 
+    -   image: /uploads/corporate-2.jpg
+        alt: 
+    -   image: /uploads/corporate-3.jpg
+        alt: 
+    -   image: /uploads/corporate-4.jpg
+        alt: 
+    -   image: /uploads/corporate-5.jpg
+        alt: 
+    -   image: /uploads/corporate-6.jpg
+        alt: 
+    -   image: /uploads/corporate-7.jpg
+        alt: 
+
 ---
 
 
 
-<section class="bg-center bg-cover" style="background-image: url(/uploads/beach-walk.png);">
+<section class="bg-center bg-cover" style="background-image: url(/uploads/wedding.jpg);">
         <div class="max-w-screen-xl min-h-[80vh] mx-auto relative flex justify-center items-center">
-            <h2 class="text-2xl text-white">celebrate in Bintan</h2>
+            <img src="/uploads/celebrate-in-bintan.svg">
         </div>
         <!-- </div>   -->
 </section>
@@ -67,16 +49,16 @@ sticky-scroll-events:
 
 <section class="px-0 py-[10vh]">
         <div class="px-[5%] max-w-screen-lg mx-auto text-center">
-            <h2 class="text-2xl">The perfect venue for your wedding or Event</h2>
-            <p class="pb-[5vh]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h2 class="text-2xl text-blue">The perfect venue for your wedding or event</h2>
+            <p class="pb-[5vh] text-blue">Whether you're planning an intimate elopement or a beachfront celebration, we’ve got the perfect setting (and expert tips) to bring your oceanside wedding dreams to life. Choose between the stunning Sesahik Pavilion, a garden ceremony or right on the white sand beach itself, and then treat your guests to an incredible wedding weekend with all the resort amenities at your fingertips. </p>
         </div>
         <div class="flex flex-nowrap gap-4 overflow-x-scroll">
             {% for item in page.wedding-grid %}
-                <div class="shrink-0 basis-[500px]">
+                <div class="shrink-0 basis-[400px]">
                     <div class="relative mb-6" style="aspect-ratio: 2/3;">
                         <img class="absolute inset-0 object-cover object-center h-full w-full" src="{{item.image}}" alt="">
                     </div>
-                    <h3 class="sub-heading"> {{item.heading}}</h3>
+                    <p class="text-blue"> {{item.heading}}</p>
 
                 </div>
             {% endfor %}
@@ -84,32 +66,31 @@ sticky-scroll-events:
 </section>
 
 
-<section class="text-blue">
-    <div class="max-w-screen-xl mx-auto grid grid-cols-3 gap-8">
-        <div class="grid gap-4">
+<section class="bg-cream text-blue border-blue border-2 p-4">
+    <div class="grid grid-cols-5 gap-8">
+        <div class="col-span-2 grid gap-4">
             {% for image in page.sticky-scroll-celebrations %}
                 <div class="relative w-full">
                     <img class="w-full" src="{{image.image}}" alt="image.alt">
-
                 </div>
             {% endfor %}
         </div>
-        <div class="col-span-2">
+        <div class="col-span-3">
             <div class="min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
                 <div class="text-right">
-                    <h3>WEDDINGS, BIRTHDAYS & SPECIAL EVENTS</h3>
+                    <h3 class="sub-heading text-base">WEDDINGS, BIRTHDAYS & SPECIAL EVENTS</h3>
                 </div>
                 
                 <div class="relative">
-                    <img src="/uploads/Brand Illustration_G&E_Sparkler_Pol_Indigo.png" alt="sparkler" class="right-0 absolute -top-[-5vh]">
+                    <!-- <img src="/uploads/Brand Illustration_G&E_Sparkler_Pol_Indigo.png" alt="sparkler" class="right-0 absolute -top-[-5vh]"> -->
                 </div>
 
                 <div class="lg:w-2/3">
-                    <h2 class="text-2xl">Celebrations</h2>
-                    <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
+                    <h2 class="text-xl">Celebrations</h2>
+                    <P>From milestone birthdays to anniversaries and special events, Hotel Indigo Bintan is the perfect place to celebrate. Our team can curate the perfect trip for groups big and small - whether you’re looking for a private beachfront dinner & bonfire, a private omakase dinner at Stix or a pool party at Sugarbeats we’ve got you covered.   </P>
                     <P>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ipsa tempore! Asperiores repudiandae aliquid quisquam sunt porro aliquam ipsam, officia alias maiores quibusdam vitae, repellat possimus vero sequi maxime modi?</p>
-                        <a href="" class="button-rounded">SEE MENU</a> <a class="button-rounded ml-6 inline-block" href="BOOK NOW">MAKE A RESERVATION</a></P>
+                        <p>And while you’re here, enjoy all the facilities on offer from watersports to a our onsite gym & spa.</p>
+                        <a href="" class="button-rounded">LEARN MORE</a></P>
                 </div>
                 
             </div>
@@ -120,34 +101,33 @@ sticky-scroll-events:
 
 
 
-<section class="text-blue">
-    <div class="max-w-screen-xl mx-auto grid grid-cols-3 gap-8">
-
-        <div class="col-span-2">
+<section class="bg-cream text-blue border-blue border-2 p-4">
+    <div class="grid grid-cols-5 gap-8">
+        <div class="col-span-3">
             <div class="min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
                 <div class="text-left">
-                    <h3>CORPORATE BUYOUT & EVENT</h3>
+                    <h3 class="sub-heading text-base">CORPORATE BUYOUT & EVENT</h3>
                 </div>
                 <!-- <div>
                     <img src="/uploads/Brand Illustration_F&B_Wine Bottle Half_IHG_Indigo.svg" alt="wind bottle">
                 </div> -->
                 
-                <div class="md:w-2/3">
-                    <h2>Meetings & Events</h2>
+                <div class="lg:w-2/3">
+                    <h2 class="text-lg">Meetings & Events</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        With access to two resorts side-by-side, Hotel Indigo Bintan Lagoi Beach and Holiday Inn you have the perfect venue for meetings and corporate events from small groups to full buy-outs. 
                     </p>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Our team can help plan everything, from workshops in our dedicated ballroom to team building activities on the beach to an oceanfront pool party at Sugarbeats. We also have incentive travel capabilities from spa treatments & day trips to beachfront dinner celebrations with fireworks to end the night. It’s the island escape your company needs. 
                     </p>
                     <p>
-                        <a href="" class="button">SEE MENU</a> <a class="button ml-6 inline-block" href="BOOK NOW">MAKE A RESERVATION</a>
+                        <a href="" class="button-rounded">LEARN MORE</a>
                     </P>
                 </div>
                 
             </div>
         </div>
-        <div class="grid gap-4">
+        <div class="col-span-2 grid gap-4">
             {% for image in page.sticky-scroll-events %}
                 <div class="relative w-full">
                     <img class="w-full" src="{{image.image}}" alt="image.alt">
@@ -159,17 +139,18 @@ sticky-scroll-events:
 </section>
 
 
-<section class="bg-contain bg-repeat-x bg-bottom pt-[20vh] pb-[50vh]" style="background-image: url('/uploads/Home-1.jpg');">
+<section class="bg-contain bg-repeat-x bg-bottom pt-[20vh] pb-[50vh] text-blue" style="background-image: url('/uploads/Home-1.jpg');">
     <div class="max-w-screen-xl mx-auto">
-    <h2 class="text-lg text-center">
+    <h2 class="text-lg text-center ">
         Get in touch
     </h2>
     <form action="" class="flex flex-col justify-center w-1/2 gap-4 mx-auto">
-        <input type="text" placeholder="Name" name="Name" class="border-blue border text-blue p-4">
-        <input type="email" placeholder="Email" name="Email" class="border-blue border text-blue p-4">
-        <input type="tel" placeholder="Phone" name="Phone" class="border-blue border text-blue p-4">
-        <input type="text" placeholder="Type of Enquiry" name="Enquiry type" class="border-blue border text-blue p-4" >
-        <textarea name="message" id="" placeholder="Message" class="border-blue border text-blue p-4"></textarea>
+        <input type="text" placeholder="Name" name="Name" class="bg-cream border-blue border border-2 text-blue p-4">
+        <input type="email" placeholder="Email" name="Email" class="bg-cream border-blue border border-2 text-blue p-4">
+        <input type="tel" placeholder="Phone" name="Phone" class="bg-cream border-blue border border-2 text-blue p-4">
+        <input type="text" placeholder="Type of Enquiry" name="Enquiry type" class="bg-cream border-blue border border-2 text-blue p-4" >
+        <textarea name="message" id="" placeholder="Message" class="bg-cream border-blue border border-2 text-blue p-4"></textarea>
+        <button type="submit" class="button-rounded bg-blue text-cream mx-auto">Submit</button>
     </form>
     </div>
 </section>
