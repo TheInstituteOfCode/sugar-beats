@@ -585,6 +585,9 @@ video {
 .max-w-\[550px\] {
   max-width: 550px;
 }
+.max-w-full {
+  max-width: 100%;
+}
 .max-w-screen-lg {
   max-width: 1024px;
 }
@@ -593,9 +596,6 @@ video {
 }
 .max-w-screen-xl {
   max-width: 1280px;
-}
-.max-w-full {
-  max-width: 100%;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -934,7 +934,6 @@ body svg,body img {
     /* left:100vw; */
     left: calc(-475px - 1rem - 5%);
     /* bottom: 0vh; */
-    background-color: #f9f9f9;
     padding:150px 5% 1rem 1rem;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 8;
