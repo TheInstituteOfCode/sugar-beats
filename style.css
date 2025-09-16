@@ -6,7 +6,8 @@
 /* Tailwind */
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+
+/* Add tailwind utiliities at the end so they override base styles */
 
 /* Custom CSS */
 
@@ -67,6 +68,11 @@ body svg,body img {
     font-size: 1.2rem;
 }
 
+.heading-caps {
+  font-family: 'ivymode';
+  text-transform: uppercase; 
+}
+
 
 .handwriting {
     font-family: Adobe Handwriting
@@ -86,6 +92,10 @@ body svg,body img {
 .button-rounded {
     padding: .5rem 2rem ;
     border-radius: 2rem;
+}
+
+.button-solid {
+  border: none;
 }
 
 /* burger */
@@ -173,3 +183,29 @@ body svg,body img {
   text-align:left;
   white-space:nowrap;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Keep these at the end  */
+
+@tailwind utilities;

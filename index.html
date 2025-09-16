@@ -2,36 +2,46 @@
 layout: default
 title: Homepage
 carousel-1:
-    - image: /uploads/food-1.png
-      alt: food
-    - image: /uploads/2-tree-plus-sunset.png
-      alt: trees and sun function
-    - image: /uploads/dive.png
-      alt: div
+    - image: /uploads/ocean-kitchen-1.jpg
+      alt: Ocean Kitchen Bintan
+    - image: /uploads/ocean-kitchen-2.jpg
+      alt: Ocean Kitchen Bintan
+    - image: /uploads/ocean-kitchen-3.jpg
+      alt: Ocean Kitchen Bintan
+    - image: /uploads/ocean-kitchen-4.jpg
+      alt: Ocean Kitchen Bintan
+    - image: /uploads/ocean-kitchen-5.jpg
+      alt: Ocean Kitchen Bintan
 carousel-2:
-    -   image: /uploads/2-tree-plus-sunset.png
-        alt: trees and sun function
-    -   image: /uploads/food-1.png
-        alt: food
-    -   image: /uploads/dive.png
-        alt: div
+    -   image: /uploads/stix-1.jpg
+        alt: Stix at Sugarbeats Bintan
+    -   image: /uploads/stix-2.jpg
+        alt: Stix at Sugarbeats Bintan
+    -   image: /uploads/stix-3.jpg
+        alt: Stix at Sugarbeats Bintan
+    -   image: /uploads/stix-4.jpg
+        alt: Stix at Sugarbeats Bintan
 sleep-grid:
-    -   heading: Ocean View Room
+    -   heading: Ocean View Suite
         sub-heading: HOTEL INDIGO BINTAN
-        image: /uploads/food-1.png
-        description: A spacious room with space to explore and a private bathroom. 
-    -   heading: Ocean View Room
+        image: /uploads/indigo-suite-1.jpg
+        description: A spacious room with space to stunning ocean views and private bathroom.
+        url: https://www.ihg.com/hotelindigo/hotels/id/in/bintan/bnibb/hoteldetail
+    -   heading: One Bedroom Suite
         sub-heading: HOTEL INDIGO BINTAN
-        image: /uploads/food-1.png
-        description: A spacious room with space to explore and a private bathroom. 
-    -   heading: Ocean View Room
+        image: /uploads/indigo-suite-2.jpg
+        description: More room to spread out, a cosy bathtub to soak in and spacious living area.
+        url: https://www.ihg.com/hotelindigo/hotels/id/in/bintan/bnibb/hoteldetail
+    -   heading: Private Pool Villa
         sub-heading: HOTEL INDIGO BINTAN
-        image: /uploads/food-1.png
-        description: A spacious room with space to explore and a private bathroom. 
-    -   heading: Ocean View Room
-        sub-heading: HOTEL INDIGO BINTAN
-        image: /uploads/food-1.png
-        description: A spacious room with space to explore and a private bathroom. 
+        image: /uploads/indigo-suite-3.jpg
+        description: For days when you don't want to share, this villa comes with your own private pool.
+        url: https://www.ihg.com/hotelindigo/hotels/id/in/bintan/bnibb/hoteldetail
+    -   heading: Pool View Room
+        sub-heading: HOLIDAY INN
+        image: /uploads/holiday-inn-1.jpg
+        description: A  cosy, affordable room with private bathroom and balcony overlooking the pool.
+        url: https://www.ihg.com/holidayinnresorts/hotels/id/in/bintan/bnibl/hoteldetail
 
 ---
 
@@ -48,9 +58,9 @@ sleep-grid:
 
 <section class="bg-cream min-h-[100vh] flex items-center bg-cover" style="background-image:url('/uploads/palm-trees.jpg')">
         <div class="max-w-screen-lg mx-auto text-center text-blue mb-20" style="background-image: url();">
-            <h3 class="sub-heading heading-block text-md">A PLAYGROUND FOR THE CURIOUS</h3>
+            <h3 class="sub-heading heading-block text-md">AN OCEANFRONT BEACH CLUB IN BINTAN</h3>
             <h2 class="text-lg">Sugarbeats is Bintan’s best beach club, a spot to eat, drink and play and watch the world go past all with a dreamy ocean backdrop. </h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <p>Set on one of Bintan’s most stunning stretches of beach, SugarBeats blends ocean views, curated music, and elevated dining into one unforgettable experience. By day, unwind by the water. By night, let the music move you. </p>
         </div>  
 </section>
 
@@ -59,46 +69,40 @@ sleep-grid:
         <div class="max-w-screen-xl mx-auto grid grid-cols-12">
             <div class="col-span-5 row-span-3 relative" style="grid-column-start: 1;
   grid-row-start: 1;">
-                <img src="/uploads/dive.png" alt="">
+                <img src="/uploads/day-1.jpg" alt="">
                 <div class="absolute w-[50%] -right-[5%] -bottom-[15%]">
-                    <img src="/uploads/dive.png" alt="">
+                    <img src="/uploads/day-2.jpg" alt="">
                 </div>
             </div>
-            <div class="col-span-2">
-                {% include day.html %}
-            </div>
-            <div class="col-span-4">
-                {% include dreaming.html %}
+            <div class="col-span-7 px-8">
+                {% include day-dreaming.html %}
             </div>
             <!-- spacer -->
-             <div class="col-span-1"></div>
+             <!-- <div class="col-span-1"></div> -->
 
              <div class=" col-start-7 col-span-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <p><a href="/book" class="button-rounded border-cream">Book your day pass</a></p>
+                <p>SugarBeats is your barefoot escape on Bintan’s coast. Think lazy afternoons with a cold drink in hand, fresh bites straight from the kitchen, and live beats rolling in as the sun goes down. Take a dip in our oceanfront swimming pool, pick one of the countless daybeds to lounge on and watch the world go by. </p>
+                <p><a href="/book" class="button-rounded border-cream mt-2">Book your day pass</a></p>
              </div>
         </div>  
 </section>
 
-<section class="bg-blue text-cream">
+<section class="bg-blue text-cream pb-[20%]">
         <div class="max-w-screen-xl mx-auto grid grid-cols-12">
             <div class="col-span-5">
                 <div class="text-left">
-                    {% include summer.html %}
-                </div>
-                <div class="text-right">
-                    {% include nights.html %}
+                    {% include summer-nights.html %}
                 </div>
             </div>
             <div class="col-start-7 col-span-6 row-span-2">
                 <!-- temp aspec div reomve once correct image added -->
                  <div class="relative" style="aspect-ratio: 676/515;">
-                    <img src="/uploads/dive.png" class="absolute w-full h-full inset-0" alt="">
+                    <img src="/uploads/night-.jpg" class="absolute w-full h-full inset-0" alt="">
                  </div>
             </div>
             <div class="col-span-4 col-start-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p><a href="/" class="button uppercase">come for dinner</a></p>
+                <p>In the evenings Sugarbeats comes alive, watch the sunset over the ocean and then listen to the beats, with live music every weekend and a curated playlist all week. Try one of our curated cocktails, and enjoy one of the best meals you’ll have in Bintan. </p>
+                <p><a href="/" class="button uppercase mt-2">come for dinner</a></p>
             </div>
         </div>  
 </section>
@@ -106,20 +110,20 @@ sleep-grid:
 <section class="p-0 relative">
         <img class="w-full" src="/uploads/island-life.svg" alt=""> 
         <div class="absolute h-full w-full inset-0 flex justify-center items-center">
-            <img src="/uploads/dive.png" alt="">
+            <img src="/uploads/beach.jpg" class="max-w-[40%]">
         </div>
 </section>
 <section class="bg-cream text-rust">
     <div class="max-w-screen-xl mx-auto grid grid-cols-2 gap-16">
         <div class="col-span-full text-center">
-            <img src="/uploads/2-tree-plus-sunset.png" alt="">
+            <img src="/uploads/squiggles.png" alt="">
         </div>
         <div>
             <h3 class="text-xl">Ocean Kitchen</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et iure quas ipsa! Deserunt aperiam sapiente animi quos quibusdam quae in ullam doloremque. Perferendis doloribus inventore et nemo debitis laboriosam numquam.</p>
-            <p><a href="/">SEE MENU {% include orange-arrow.html %}</a></p>
+            <p>Fresh from the sea, straight to your plate. Ocean Kitchen celebrates Bintan’s coastal bounty with dishes that spotlight the day’s catch and the flavors of the island. Whether it’s grilled seafood by the beach or inventive takes on Indonesian classics, we've got something for everyone.</p>
+            <p><a href="https://drive.google.com/file/d/1j9xXJ5WShK1opZct-OwEFRaov0XUAYmn/view?usp=drive_link" target="_blank">SEE MENU {% include orange-arrow.html %}</a></p>
             <div class="aspect-square carousels relative">
-                <img class="main-image h-full w-full inset-0 absolute" src="/uploads/food-1.png" alt="">
+                <img class="main-image h-full w-full inset-0 absolute object-cover" src="/uploads/ocean-kitchen-1.jpg" alt="">
                 <div class="carosel-alt-images absolute left-[100vw]">
                     {% for image in page.carousel-1 %}
                     <img src="{{image.image}}" alt="{{image.alt}}">
@@ -129,10 +133,10 @@ sleep-grid:
         </div>
                 <div>
             <h3 class="text-xl">Stix</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et iure quas ipsa! Deserunt aperiam sapiente animi quos quibusdam quae in ullam doloremque. Perferendis doloribus inventore et nemo debitis laboriosam numquam.</p>
-            <p><a href="/">SEE MENU {% include orange-arrow.html %}</a></p>
+            <p>Stix, a 16-seat restaurant & bar where we take the beloved Indonesian satay and infuse it with a modern twist. Using the freshest locally sourced ingredients and traditional techniques we honor the island’s rich culinary heritage while taking inspiration from global cuisine. </p>
+            <p><a href="https://drive.google.com/file/d/1NV44w8rZkJ3kbD2vvCHTFGUKabOMcal9/view?usp=drive_link" target="_blank">SEE MENU {% include orange-arrow.html %}</a></p>
             <div class="aspect-square carousels relative">
-                <img class="main-image h-full w-full inset-0 absolute" src="/uploads/food-1.png" alt="">
+                <img class="main-image h-full w-full inset-0 absolute object-cover" src="/uploads/stix-1.jpg" alt="">
                 <div class="carosel-alt-images absolute left-[100vw]">
                     {% for image in page.carousel-2 %}
                     <img src="{{image.image}}" alt="{{image.alt}}">
@@ -143,12 +147,12 @@ sleep-grid:
 
     </div>  
 </section>
-<section class="bg-cover bg-center" style="background-image: url(/uploads/walking-on-the-beach-banner.png);">
-        <div class="max-w-screen-xl mx-auto min-h-screen flex justify-center items-center">
+<section class="bg-cover bg-center " style="background-image: url(/uploads/wedding-1.jpg);">
+        <div class="max-w-screen-xl mx-auto min-h-[80vh] flex justify-center items-center">
             <div>
                 {% include the-start-of-forever.html %}
                 <p>
-                    <a href="" class="button button-no-radius bg-cream text-blue">
+                    <a href="/weddings-and-events.html" class="button button-solid bg-cream text-blue border-cream">
                         PLAN YOUR BEACH WEDDING
                     </a>
                 </p>
@@ -162,17 +166,17 @@ sleep-grid:
 <section class="bg-blue text-cream">
     <div class="max-w-screen-xl mx-auto">
         <div class="flex justify-between items-center">
-            <h2 class="text-lg">sleep</h2>
-            <p><a href="/temp" class="sub-heading">sleep a little longer</a></p>
+            <h2 class="text-lg heading-caps">sleep</h2>
+            <p><a href="/temp" class="sub-heading">stay a little longer</a></p>
         </div>
         <div class="flex flex-nowrap overflow-x-scroll gap-8">
             {% for item in page.sleep-grid %}
-            <div class="rounded-3xl overflow-hidden bg-cream text-blue">
+            <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue w-1/4">
                 <div class="relative overflow-hidden aspect-square round-t-3xl">
                     <img src="{{item.image}}" alt="{{image.alt}}">
                 </div>
                 <div class="p-4">
-                    <h3 style="font-size: .5rem;">
+                    <h3 class="sub-heading text-tiny">
                         {{item.sub-heading}}
                     </h3>
                     <h3 class="text-md">{{item.heading}}</h3>
@@ -180,7 +184,7 @@ sleep-grid:
                         {{item.description}}
                     </p>
                 </div>
-            </div>
+            </a>
             {% endfor %}
         </div>
     </div>  
