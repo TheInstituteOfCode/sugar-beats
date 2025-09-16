@@ -531,17 +531,14 @@ video {
 .mb-20 {
   margin-bottom: 5rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .mb-\[1em\] {
   margin-bottom: 1em;
 }
 .ml-6 {
   margin-left: 1.5rem;
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 .inline-block {
   display: inline-block;
@@ -575,6 +572,9 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .max-w-\[550px\] {
   max-width: 550px;
@@ -639,6 +639,12 @@ video {
 .rounded-3xl {
   border-radius: 1.5rem;
 }
+.border {
+  border-width: 1px;
+}
+.border-blue {
+  border-color: var(--blue);
+}
 .border-cream {
   border-color: var(--cream);
 }
@@ -650,6 +656,9 @@ video {
 }
 .bg-yellow {
   background-color: var(--yellow);
+}
+.bg-contain {
+  background-size: contain;
 }
 .bg-cover {
   background-size: cover;
@@ -710,17 +719,20 @@ video {
 .pb-16 {
   padding-bottom: 4rem;
 }
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
 .pb-\[250px\] {
   padding-bottom: 250px;
+}
+.pb-\[50vh\] {
+  padding-bottom: 50vh;
 }
 .pb-\[5vh\] {
   padding-bottom: 5vh;
 }
 .pt-\[200px\] {
   padding-top: 200px;
+}
+.pt-\[20vh\] {
+  padding-top: 20vh;
 }
 .text-left {
   text-align: left;
@@ -923,6 +935,9 @@ body svg,body img {
   white-space:nowrap;
 }
 @media (min-width: 768px) {
+  .md\:w-2\/3 {
+    width: 66.666667%;
+  }
   .md\:w-2\/4 {
     width: 50%;
   }
