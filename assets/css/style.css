@@ -704,17 +704,8 @@ video {
 .p-8 {
   padding: 2rem;
 }
-.p-\[5px\] {
-  padding: 5px;
-}
 .p-\[min\(20vw\2c _20vh\)\] {
   padding: min(20vw, 20vh);
-}
-.p-\[15pxpx\] {
-  padding: 15pxpx;
-}
-.p-\[15px\] {
-  padding: 15px;
 }
 .px-0 {
   padding-left: 0px;
@@ -755,14 +746,14 @@ video {
 .pb-\[5vh\] {
   padding-bottom: 5vh;
 }
+.pl-\[15px\] {
+  padding-left: 15px;
+}
 .pt-\[200px\] {
   padding-top: 200px;
 }
 .pt-\[20vh\] {
   padding-top: 20vh;
-}
-.pl-\[15px\] {
-  padding-left: 15px;
 }
 .text-left {
   text-align: left;
@@ -944,9 +935,9 @@ body svg,body img {
     position: fixed;
     top: 0vh;
     /* left:100vw; */
-    left: calc(-475px - 1rem - 5%);
+    left: calc(-468px - 3rem - 5vw);
     /* bottom: 0vh; */
-    padding:150px 5% 1rem 1rem;
+    padding:150px 3rem 1rem calc(5vw - 7px);
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 8;
   transition:1s;
@@ -960,10 +951,6 @@ body svg,body img {
 }
 .burger-menu a {
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 300;
-  /* color: #C3BFBC; */
-  font-family: 'Alegreya Sans SC', sans-serif;
   display: inline-block;
   padding:5px 15px;
   text-align:left;
