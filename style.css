@@ -105,10 +105,10 @@ body svg,body img {
   border-radius: 22px;
   transition: 2s;
 }
-.burger-button.active span{
+/* .burger-button.active span{
   border-color: green;
   background-color:#383;
-}
+} */
 
 .burger-top, .burger-bottom{
   position: absolute;
@@ -124,7 +124,7 @@ body svg,body img {
 /* make sure this has the same top as the burger button has padding*/
 .burger-button.active .burger-top{
   position: absolute;
-  top: 2rem;
+  top: 1rem;
   transform: rotateZ(45deg);
 }
 
@@ -138,7 +138,7 @@ body svg,body img {
 
 .burger-button.active .burger-bottom{
   position: absolute;
-  bottom: 2rem;
+  bottom: 1rem;
   transform: rotateZ(-45deg);
 }
 
@@ -146,11 +146,11 @@ body svg,body img {
     display: flex;
     position: fixed;
     top: 0vh;
-    left:100vw;
-    right: -100vw;
-    bottom: 0vh;
+    /* left:100vw; */
+    left: calc(-475px - 1rem - 5%);
+    /* bottom: 0vh; */
     background-color: #f9f9f9;
-    padding:5px;
+    padding:150px 5% 1rem 1rem;
     box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 8;
   transition:1s;
@@ -159,17 +159,17 @@ body svg,body img {
   flex-direction:column;
 }
 .burger-menu.active{
-  left:50vw;
-  right:0;
+  /* left:50vw; */
+  left:0;
 }
 .burger-menu a {
   text-decoration: none;
   font-size: 20px;
   font-weight: 300;
-  color: #C3BFBC;
+  /* color: #C3BFBC; */
   font-family: 'Alegreya Sans SC', sans-serif;
-  display:block;
+  display: inline-block;
   padding:5px 15px;
-  text-align:center;
+  text-align:left;
   white-space:nowrap;
 }
