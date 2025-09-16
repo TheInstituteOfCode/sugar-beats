@@ -20,6 +20,7 @@
 
 header, footer, section {
     padding: 5%;
+    position: relative;
 }
 /* typography */
 body, html{

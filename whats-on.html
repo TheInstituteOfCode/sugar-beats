@@ -1,0 +1,116 @@
+---
+layout: default
+title: whats on at sugar beats
+whats-on-grid:
+    -   heading: Ocean View Room
+        sub-heading: HOTEL INDIGO BINTAN
+        image: /uploads/food-1.png
+        description: A spacious room with space to explore and a private bathroom. 
+    -   heading: Ocean View Room
+        sub-heading: HOTEL INDIGO BINTAN
+        image: /uploads/food-1.png
+        description: A spacious room with space to explore and a private bathroom. 
+    -   heading: Ocean View Room
+        sub-heading: HOTEL INDIGO BINTAN
+        image: /uploads/food-1.png
+        description: A spacious room with space to explore and a private bathroom. 
+    -   heading: Ocean View Room
+        sub-heading: HOTEL INDIGO BINTAN
+        image: /uploads/food-1.png
+        description: A spacious room with space to explore and a private bathroom. 
+
+---
+
+
+
+<section class="p-0" style="background-image: url(/uploads/walking-on-the-beach-banner.png);">
+        <!-- <div class="max-w-screen-xl mx-auto min-h-screen flex justify-center items-center"> -->
+
+<img src="/uploads/eat-well.jpg" alt="">
+            
+<div class="absolute bottom-10 left-0 w-full text-center">
+    <a href="" class="button-rounded bg-blue text-white">book now</a>
+</div>
+        <!-- </div>   -->
+</section>
+
+<section class="bg-blue text-cream">
+    <div class="max-w-screen-xl mx-auto">
+        <div class="flex justify-between">
+            <h2>WHATS ON</h2>
+            <p>EVENTS AT SUGARBEATS</p>
+        </div>
+        <div class="flex flex-nowrap overflow-x-scroll gap-8">
+            {% for item in page.whats-on-grid %}
+            <div class="rounded-3xl overflow-hidden bg-cream text-blue">
+                <div class="relative overflow-hidden aspect-square round-t-3xl">
+                    <img src="{{item.image}}" alt="{{image.alt}}">
+                </div>
+                <div class="p-4">
+                    <h3>
+                        {{item.sub-heading}}
+                    </h3>
+                    <h3>{{item.heading}}</h3>
+                    <p>
+                        {{item.description}}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>  
+</section> 
+
+<section class="p-0">
+    <img src="/uploads/a-day-in-the-life.png" alt="">
+</section>
+
+<section class="bg-blue text-white pb-[250px] bg-bottom bg-repeat-x" style="background-image: url('/uploads/glass.svg');">
+        <div class="max-w-screen-xl mx-auto relative">
+            <div class="flex justify-between">
+                <h3>AT SUGARBEATS</h3>
+                <h3>FRIDAY</h3>
+            </div>
+            <div class="relative text-center pt-[200px] mx-auto" style="max-width: 30rem;">
+                <h2 class="text-xl mb-[1em]">LIVE MUSIC EVERY WEEKEND</h3>
+                <img src="/uploads//Brand Illustration_G&E_Music_Record Player_JT_Canvas.png" alt="record player" class="absolute bottom-0 -right-[20rem]">
+            </div>
+            <div class="relative text-center  mx-auto" style="max-width: 30rem;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </p>
+            </div>
+
+        </div>
+</section>
+
+
+
+<section class="text-blue">
+        <div class="max-w-screen-xl mx-auto relative">
+            <div class="grid grid-cols-2 gap-8">
+                <div class="text-center flex items-center ">
+                    <div>
+                    
+                        <h2 class="text-2xl">DAYPASS</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <p class="pb-16">
+                            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore. 
+                        </p>
+                        <p>400,000 IDR  // Per Person </p> <p>Bookings Essenital</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="/uploads/EON-INSTACOPYRIGHT-R5L_0419-2.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <img src="/uploads/Brand Illustration_Guest Experience_Woman Lounging_IHG_Indigo.png" alt="" class="absolute bottom-0 left-0">
+</section>
+
+<section class="p-0">
+<img class="w-full" src="/uploads/GALLERY.png" alt="">
+</section>
