@@ -1251,6 +1251,9 @@ body svg,body img {
   .md\:w-full {
     width: 100%;
   }
+  .md\:w-1\/2 {
+    width: 50%;
+  }
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }

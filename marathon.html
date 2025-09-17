@@ -139,7 +139,7 @@ sleep-grid:
                 
             </div>
         </div>
-        <div class="col-span-2 gap-4 order-1 overflow-x-scroll flex flex-nowrap md:grid">
+        <div class="col-span-2 gap-4 order-1 overflow-x-scroll flex flex-nowrap md:grid px-[var(--side-gap)]">
             {% for image in page.sticky-scroll-section %}
                     <img class="h-[30vh] w-auto md:h-auto max-w-[inital] md:w-full shrink-0" src="{{image.image}}" alt="image.alt">
             {% endfor %}
