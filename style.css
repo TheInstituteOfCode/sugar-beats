@@ -14,6 +14,7 @@
 
 :root {
     --blue: #2F5992;
+    --light-blue: #E1EDF2;
     --cream: #FEFAEF;
     --yellow: #F6D265;
     --rust: #CC4829;
@@ -35,7 +36,8 @@ body, html{
 }
 
 
-h1,h2,h3,h4  {
+h1,h2,h3,h4, 
+.heading  {
     margin-bottom: 1rem;
     font-family: 'ivypresto-display';
     font-weight: 200;
@@ -165,7 +167,7 @@ body svg,body img {
     z-index: 8;
   transition:1s;
     align-content:space-around;
-  justify-content:space-around;
+  justify-content:center;
   flex-direction:column;
 }
 .burger-menu.active{

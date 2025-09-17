@@ -40,14 +40,14 @@ sleep-grid:
 
 <section class="bg-cream bg-repeat-x bg-bottom pb-[10rem]" style="background-image: url('/uploads/Home-1.jpg');background-size: cover;">
         <div class="max-w-screen-lg mx-auto pt-[10%] pb-[25%] px-[5%] text-center text-blue" style="">
-            <h3 class="sub-heading"> BINTAN MARATHON  9 - 11 NOV 2025</h3>
+            <h3 class="sub-heading"> BINTAN MARATHON  <br class="sm:hidden"> 9 - 11 NOV 2025</h3>
             <h2 class="text-md md:text-lg">Join in the fun and get away for the weekend to a tropical island escape, running through pristine jungle & mangroves.</h2>
             <p>Experience the scenic beauty of Bintan on clean, flat roads, free from  vehicles and filled with fresh air—perfect for a peaceful and energizing run. And then celebrated your race at the Runners Recharge Lounge at Sugarbeats. </p>
         </div>  
 </section>
 
 
-<section class="bg-blue text-cream">
+<section class="bg-blue text-cream py-[12vh]">
         <div class="max-w-screen-sm lg:max-w-screen-xl mx-auto lg:grid grid-cols-12">
             <div class="col-span-5 row-span-3 relative hidden lg:block" style="grid-column-start: 1;
   grid-row-start: 1;">
@@ -67,14 +67,14 @@ sleep-grid:
             <!-- spacer -->
              <div class="col-span-1"></div>
 
-             <div class=" col-start-7 col-span-4">
+             <div class="-mt-16 col-start-7 col-span-4">
                 <p>Mandiri Bintan Marathon,  happening on November 8–9, 2025,  will welcome up to 5,000 runners to one of the world’s most beautiful races. From a 3km fun run to a full marathon, there is something for everyone as you run through ancient forests and around stunning lakes. </p>
                 <p><a href="https://bintan-marathon.com" target="_blank" class="button-rounded border-cream">Book your race tickets</a></p>
              </div>
         </div>  
 </section>
 
-<section class="bg-blue text-cream">
+<section class="bg-blue text-cream py-[12vh]">
         <div class="max-w-screen-xl mx-auto lg:grid grid-cols-12">
             <div class="col-start-7 col-span-6 row-span-2 lg:order-2 mb-12">
                 <!-- temp aspec div reomve once correct image added -->
@@ -98,24 +98,23 @@ sleep-grid:
 
 
 
-
-<section class="bg-yellow text-white p-[min(20vw,_20vh)]">
-        <div class="max-w-screen-s mx-auto">
-            <h2 class="text-lg md:text-2xl z-20 text-center mx-auto" style="max-width: 46rem;">A WEEKEND AWAY</h2>
-            <div class="aspect-square relative overflow-hidden mx-auto" style="max-width: 700px;">
+<!-- IMPORTANT THESE PADDING & TEXT SIZE CLASSES ARE CAREFULLY BALANCED TOGETHER, CHANGING ONE CAN BREAK THE REST -->
+<section class="bg-yellow text-white py-[20%] px-[10%] sm:px-[20vw] sm:py-[10vw] lg:px-[30vw] lg:py-[10vw]">
+        <div class="mx-auto">
+            <h2 class="text-[10vw] sm:text-[7.5vw] lg:text-[5vw] -mx-1 heading-caps z-20 text-center mx-auto" style="">A WEEKEND AWAY</h2>
+            <div class="aspect-square relative overflow-hidden mx-auto" style="">
                 <video class="absolute top-0 left-0 h-full w-full object-cover z-10" autoplay muted loop>
                     <source src="/test-50k-kbs-wave-hb.mp4" type="video/mp4">
                 </video>
 
             </div>
-            <h3 class="text-xl text-center">
+            <h3 class="text-[7vw] sm:text-[5.5vw] lg:text-[3.7vw] -mx-1 mt-3 heading-caps text-center">
                 AT HOTEL INDIGO BINTAN
             </h3>
-
         </div>
 </section>
 
-<section class="bg-cream text-blue border-blue border-2 p-4">
+<section class="bg-cream text-blue border-blue border-2 p-0 md:p-4">
     <div class="md:grid grid-cols-5 gap-8">
 
         <div class="col-span-3">
@@ -149,12 +148,12 @@ sleep-grid:
 
 
 
-<section class="bg-blue text-cream px-0">
-    <div class="p-[5%]">
+<section class="bg-blue text-cream px-0 py-[15%] md:py-[5%]">
+    <div class="p-[5%] pt-0">
         <div class="mx-auto max-w-screen-xl">
             <div class="flex justify-between items-center">
                 <h2 class="text-lg heading-caps">sleep</h2>
-                <p><a href="/temp" class="sub-heading">stay a little longer</a></p>
+                <p class="sub-heading text-tiny md:text-base">stay a little longer</p>
             </div>
         </div>
     </div>
@@ -164,16 +163,16 @@ sleep-grid:
 
         <div class="flex flex-nowrap overflow-x-scroll gap-8 px-[var(--side-gap)]">
             {% for item in page.sleep-grid %}
-            <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 md:w-1/4">
+            <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 sm:w-2/5 lg:w-1/4">
                 <div class="relative overflow-hidden aspect-square round-t-3xl">
                     <img src="{{item.image}}" alt="{{image.alt}}">
                 </div>
                 <div class="p-4">
-                    <h3 class="sub-heading text-tiny">
+                    <h3 class="sub-heading text-tiny md:text-base">
                         {{item.sub-heading}}
                     </h3>
-                    <h3 class="text-md">{{item.heading}}</h3>
-                    <p>
+                    <h3 class="text-sm md:text-md">{{item.heading}}</h3>
+                    <p class="text-tiny md:text-base">
                         {{item.description}}
                     </p>
                 </div>
@@ -183,7 +182,7 @@ sleep-grid:
     </div>  
 </section>  
 
-<section class="bg-yellow text-blue">
+<section class="bg-yellow text-blue py-[20%] md:py-[5%]">
     <div class="max-w-screen-xl mx-auto lg:grid grid-cols-2 gap-12">
         <div class="col-span-full text-center">
             <h2 class="text-lg md:text-2xl heading-caps max-w-screen-md mx-auto mb-16">BINTAN MARATHON EVENT DETAILS</h2>
@@ -221,9 +220,9 @@ sleep-grid:
         <div>
              <video controls poster="https://bintan-marathon.com/wp-content/uploads/2024/11/Mandiri-Bintan-Marathon-2024-7-scaled.jpg">
                 <source src="https://bintan-marathon.com/wp-content/uploads/2025/03/FA_AFTERMOVIE_MBM-2024-1.mov" type="video/quicktime" />
-            </video> -
+            </video>
 
-            <h3 class="sub-heading">
+            <h3 class="sub-heading mt-4">
                 Supporting the Clean Ocean Program 
             </h3>
             <p class="mb-8">
@@ -233,5 +232,23 @@ sleep-grid:
             <!-- <img src="uploads/marathon-indigo-5.jpg" alt="marathon race"> -->
         </div>
 
+    </div>
+</section>
+
+<section class="bg-blue text-cream">
+    <div class="max-w-screen-sm mx-auto  text-center">
+    <h2 class="text-lg">
+        RSVP
+    </h2>
+    <p> Spots are limited at our Runners Recharge Lounge, so RSVP to secure your spot. </p>
+    <form action="" class="flex flex-col justify-center max-w-screen-sm gap-4 mx-auto">
+        <input type="text" placeholder="Name" name="Name" class="bg-cream border-blue border border-2 text-blue p-4">
+        <input type="email" placeholder="Email" name="Email" class="bg-cream border-blue border border-2 text-blue p-4">
+        <input type="tel" placeholder="Phone" name="Phone" class="bg-cream border-blue border border-2 text-blue p-4">
+        <input type="text" placeholder="How many people?" name="number-of-pax" class="bg-cream border-blue border border-2 text-blue p-4">
+        <input type="text" placeholder="Are you staying at Hotel Indigo or Holiday Inn, or another hotel?" name="accommodation" class="bg-cream border-blue border border-2 text-blue p-4">
+        <textarea name="message" id="" placeholder="Any other notes or questions" class="bg-cream border-blue border border-2 text-blue p-4"></textarea>
+        <button type="submit" class="button-rounded bg-blue text-cream mx-auto">Submit</button>
+    </form>
     </div>
 </section>

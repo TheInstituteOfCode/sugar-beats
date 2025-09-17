@@ -6,10 +6,14 @@ wedding-grid:
         image: /uploads/events-gallery-3.jpg
     -   heading: Oceanview Swimming Pools
         image: /uploads/events-gallery-1.jpg
-    -   heading: Exclusive Beach Club Access
-        image: /uploads/events-gallery-4.jpg
+    -   heading: Lush gardens & resort grounds
+        image: /uploads/events-gallery-6.jpg
     -   heading: Stunning Lagoi Beach
         image: /uploads/events-gallery-2.jpg
+    -   heading: Exclusive Beach Club Access
+        image: /uploads/events-gallery-4.jpg
+    -   heading: Watersports & Activities
+        image: /uploads/events-gallery-5.jpg
 sticky-scroll-celebrations:
     -   image: /uploads/event-3.jpg
         alt: food
@@ -47,18 +51,18 @@ sticky-scroll-events:
 </section>
 
 
-<section class="px-0 py-[10vh]">
+<section class="px-0 py-[10vh] bg-lightblue">
         <div class="px-[5%] max-w-screen-lg mx-auto text-center">
-            <h2 class="text-2xl text-blue">The perfect venue for your wedding or event</h2>
+            <h2 class="text-lg md:text-2xl text-blue">The perfect venue for your wedding or event</h2>
             <p class="pb-[5vh] text-blue">Whether you're planning an intimate elopement or a beachfront celebration, we’ve got the perfect setting (and expert tips) to bring your oceanside wedding dreams to life. Choose between the stunning Sesahik Pavilion, a garden ceremony or right on the white sand beach itself, and then treat your guests to an incredible wedding weekend with all the resort amenities at your fingertips. </p>
         </div>
-        <div class="flex flex-nowrap gap-4 overflow-x-scroll">
+        <div class="flex flex-nowrap gap-4 overflow-x-scroll p-4">
             {% for item in page.wedding-grid %}
-                <div class="shrink-0 basis-[400px]">
+                <div class="shrink-0 w-4/5 md:basis-[400px]">
                     <div class="relative mb-6" style="aspect-ratio: 2/3;">
                         <img class="absolute inset-0 object-cover object-center h-full w-full" src="{{item.image}}" alt="">
                     </div>
-                    <p class="text-blue"> {{item.heading}}</p>
+                    <p class="text-blue heading-caps"> {{item.heading}}</p>
 
                 </div>
             {% endfor %}
@@ -66,11 +70,11 @@ sticky-scroll-events:
 </section>
 
 
-<section class="bg-cream text-blue border-blue border-2 p-4">
+<section class="bg-cream text-blue border-blue border-2 md:p-4">
     <div class="md:grid grid-cols-5 gap-8">
 
         <div class="col-span-3">
-            <div class="md:min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
+            <div class="md:min-h-screen p-8 md:p-8 sticky top-0 flex flex-col justify-between gap-8">
                 <div class="text-right">
                     <h3 class="sub-heading text-base">WEDDINGS, BIRTHDAYS & SPECIAL EVENTS</h3>
                 </div>
@@ -80,7 +84,7 @@ sticky-scroll-events:
                 </div>
 
                 <div class="lg:w-2/3">
-                    <h2 class="text-xl">Celebrations</h2>
+                    <h2 class="text-lg md:text-xl">Celebrations</h2>
                     <P>From milestone birthdays to anniversaries and special events, Hotel Indigo Bintan is the perfect place to celebrate. Our team can curate the perfect trip for groups big and small - whether you’re looking for a private beachfront dinner & bonfire, a private omakase dinner at Stix or a pool party at Sugarbeats we’ve got you covered.   </P>
                     <P>
                         <p>And while you’re here, enjoy all the facilities on offer from watersports to a our onsite gym & spa.</p>
@@ -136,17 +140,17 @@ sticky-scroll-events:
 </section>
 
 
-<section class="bg-contain bg-cream bg-repeat-x bg-bottom pt-[20vh] pb-[50vh] text-blue" style="background-image: url('/uploads/Home-1.jpg');">
+<section class="bg-contain bg-cream bg-repeat-x bg-bottom py-[10vh] md:pt-[20vh] md:pb-[50vh] text-blue" style="background-image: url('/uploads/Home-1.jpg');">
     <div class="max-w-screen-xl mx-auto">
     <h2 class="text-lg text-center ">
         Get in touch
     </h2>
-    <form action="" class="flex flex-col justify-center max-w-screen-sm gap-4 mx-auto">
-        <input type="text" placeholder="Name" name="Name" class="bg-cream border-blue border border-2 text-blue p-4">
-        <input type="email" placeholder="Email" name="Email" class="bg-cream border-blue border border-2 text-blue p-4">
-        <input type="tel" placeholder="Phone" name="Phone" class="bg-cream border-blue border border-2 text-blue p-4">
-        <input type="text" placeholder="Type of Enquiry" name="Enquiry type" class="bg-cream border-blue border border-2 text-blue p-4" >
-        <textarea name="message" id="" placeholder="Message" class="bg-cream border-blue border border-2 text-blue p-4"></textarea>
+    <form action="" class="flex flex-col justify-center max-w-screen-sm gap-4 mx-auto *placeholder:text-blue">
+        <input type="text" placeholder="Name" name="Name" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue">
+        <input type="email" placeholder="Email" name="Email" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue">
+        <input type="tel" placeholder="Phone" name="Phone" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue">
+        <input type="text" placeholder="Type of Enquiry" name="Enquiry type" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue" >
+        <textarea name="message" id="" placeholder="Message" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue"></textarea>
         <button type="submit" class="button-rounded bg-blue text-cream mx-auto">Submit</button>
     </form>
     </div>

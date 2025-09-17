@@ -10,6 +10,7 @@ module.exports = {
     
     extend: {
       colors: {
+        lightblue: 'var(--light-blue)',
         blue: 'var(--blue)',
         cream: 'var(--cream)',
         yellow: 'var(--yellow)',
