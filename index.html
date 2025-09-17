@@ -52,14 +52,14 @@ sleep-grid:
                 <source src="test-50k-kbs-wave-hb.mp4" type="video/mp4">
                 <!-- <source src="movie.ogg" type="video/ogg"> -->
             </video>
-            <h2 class="heading-block text-xl text-white absolute top-8 left-8">Bintan's <br> Favourite <br> Beach Club. </h2> 
+            <h2 class="heading-block text-md md:text-xl text-white absolute top-8 left-8">Bintan's <br> Favourite <br> Beach Club. </h2> 
         </div>
 </section>
 
-<section class="bg-cream min-h-[100vh] flex items-center bg-cover bg-center" style="background-image:url('/uploads/palm-trees.jpg')">
-        <div class="max-w-screen-lg mx-auto text-center text-blue mb-20" style="background-image: url();">
-            <h3 class="sub-heading heading-block text-sm">AN OCEANFRONT BEACH CLUB IN BINTAN</h3>
-            <h2 class="text-lg">Sugarbeats is Bintan’s best beach club, a spot to eat, drink and play and watch the world go past all with a dreamy ocean backdrop. </h2>
+<section class="bg-cream py-[15vh] sm:min-h-[100vh] flex items-center bg-contain bg-bottom bg-no-repeat" style="background-image:url('/uploads/palm-trees.jpg')">
+        <div class="max-w-screen-lg mx-auto text-center text-blue mb-30" style="background-image: url();">
+            <h3 class="sub-heading heading-block text-tiny sm:text-sm">AN OCEANFRONT BEACH CLUB IN BINTAN</h3>
+            <h2 class="text-md sm:text-lg">Sugarbeats is Bintan’s best beach club, a spot to eat, drink and play and watch the world go past all with a dreamy ocean backdrop. </h2>
             <p>Set on one of Bintan’s most stunning stretches of beach, SugarBeats blends ocean views, curated music, and elevated dining into one unforgettable experience. By day, unwind by the water. By night, let the music move you. </p>
         </div>  
 </section>
@@ -68,7 +68,7 @@ sleep-grid:
 <section class="bg-blue text-cream md:py-[20%]">
         <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-12">
 
-            <div class="col-span-7 px-8 md:order-2">
+            <div class="col-span-7 md:px-8 md:order-2">
                 {% include day-dreaming.html %}
             </div>
             
@@ -102,7 +102,7 @@ sleep-grid:
             </div>
             <div class="col-span-4 col-start-2 md:order-3 mb-8">
                 <p>In the evenings Sugarbeats comes alive, watch the sunset over the ocean and then listen to the beats, with live music every weekend and a curated playlist all week. Try one of our curated cocktails, and enjoy one of the best meals you’ll have in Bintan. </p>
-                <p><a href="/" class="button uppercase mt-2">come for dinner</a></p>
+                <p><a href="/" class="button-rounded uppercase mt-2">come for dinner</a></p>
             </div>
             <div class="col-start-7 col-span-6 row-span-2">
                 <!-- temp aspec div reomve once correct image added -->
@@ -121,12 +121,12 @@ sleep-grid:
         </div>
 </section>
 <section class="bg-cream text-rust">
-    <div class="max-w-screen-xl mx-auto grid grid-cols-2 gap-16">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-16">
         <div class="col-span-full text-center">
-            <img src="/uploads/squiggles.png" alt="">
+            <img src="/uploads/squiggles.png" alt="" class="w-16 mt-8 md:w-auto md:mt-2">
         </div>
         <div>
-            <h3 class="text-xl">Ocean Kitchen</h3>
+            <h3 class="text-md sm:text-xl">Ocean Kitchen</h3>
             <p>Fresh from the sea, straight to your plate. Ocean Kitchen celebrates Bintan’s coastal bounty with dishes that spotlight the day’s catch and the flavors of the island. Whether it’s grilled seafood by the beach or inventive takes on Indonesian classics, we've got something for everyone.</p>
             <p><a href="https://drive.google.com/file/d/1j9xXJ5WShK1opZct-OwEFRaov0XUAYmn/view?usp=drive_link" target="_blank">SEE MENU {% include orange-arrow.html %}</a></p>
             <div class="aspect-square carousels relative">
@@ -139,7 +139,7 @@ sleep-grid:
             </div>
         </div>
                 <div>
-            <h3 class="text-xl">Stix</h3>
+            <h3 class="text-md sm:text-xl">Stix</h3>
             <p>Stix, a 16-seat restaurant & bar where we take the beloved Indonesian satay and infuse it with a modern twist. Using the freshest locally sourced ingredients and traditional techniques we honor the island’s rich culinary heritage while taking inspiration from global cuisine. </p>
             <p><a href="https://drive.google.com/file/d/1NV44w8rZkJ3kbD2vvCHTFGUKabOMcal9/view?usp=drive_link" target="_blank">SEE MENU {% include orange-arrow.html %}</a></p>
             <div class="aspect-square carousels relative">
@@ -155,7 +155,7 @@ sleep-grid:
     </div>  
 </section>
 <section class="bg-cover bg-center " style="background-image: url(/uploads/wedding-1.jpg);">
-        <div class="max-w-screen-xl mx-auto min-h-[80vh] flex justify-center items-center">
+        <div class="max-w-screen-xl mx-auto min-h-[50vh] md:min-h-[80vh] flex justify-center items-center">
             <div>
                 {% include the-start-of-forever.html %}
                 <p>
@@ -174,22 +174,22 @@ sleep-grid:
     <div class="max-w-screen-xl mx-auto p-[5%]">
         <div class="flex justify-between items-center">
             <h2 class="text-lg heading-caps">sleep</h2>
-            <p><a href="/temp" class="sub-heading">stay a little longer</a></p>
+            <p class="text-tiny md:text-base sub-heading text-right">stay a little longer</p>
         </div>
     </div>
     <div>
         <div class="flex flex-nowrap overflow-x-scroll gap-8 px-[var(--side-gap)]">
             {% for item in page.sleep-grid %}
-            <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 md:w-1/4">
+            <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 sm:w-2/5 lg:w-1/4">
                 <div class="relative overflow-hidden aspect-square round-t-3xl">
                     <img src="{{item.image}}" alt="{{image.alt}}">
                 </div>
                 <div class="p-4">
-                    <h3 class="sub-heading text-tiny">
+                    <h3 class="sub-heading text-tiny md:text-base">
                         {{item.sub-heading}}
                     </h3>
-                    <h3 class="text-md">{{item.heading}}</h3>
-                    <p>
+                    <h3 class="text-sm md:text-md">{{item.heading}}</h3>
+                    <p class="text-tiny md:text-base">
                         {{item.description}}
                     </p>
                 </div>
