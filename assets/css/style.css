@@ -831,6 +831,10 @@ body svg,body img {
   margin-top: 2rem;
 }
 
+.mb-\[20vh\] {
+  margin-bottom: 20vh;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -849,6 +853,22 @@ body svg,body img {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+
+.aspect-\[1\/2\] {
+  aspect-ratio: 1/2;
+}
+
+.aspect-\[2\/3\] {
+  aspect-ratio: 2/3;
+}
+
+.aspect-\[4\/5\] {
+  aspect-ratio: 4/5;
+}
+
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
 }
 
 .h-\[30vh\] {
@@ -1025,6 +1045,10 @@ body svg,body img {
 
 .border-cream {
   border-color: var(--cream);
+}
+
+.border-rust {
+  border-color: var(--rust);
 }
 
 .bg-blue {
@@ -1287,6 +1311,9 @@ body svg,body img {
   .sm\:min-h-\[100vh\] {
     min-height: 100vh;
   }
+  .sm\:min-h-\[110vh\] {
+    min-height: 110vh;
+  }
   .sm\:w-2\/5 {
     width: 40%;
   }
@@ -1348,6 +1375,9 @@ body svg,body img {
   }
   .md\:min-h-screen {
     min-height: 100vh;
+  }
+  .md\:min-h-\[90vh\] {
+    min-height: 90vh;
   }
   .md\:w-2\/4 {
     width: 50%;
