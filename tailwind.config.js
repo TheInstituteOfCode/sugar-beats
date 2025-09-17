@@ -24,7 +24,7 @@ module.exports = {
         lg:   '3rem',  
         xl:   '4rem', 
         '2xl':'5rem', 
-      },
+      }
     },
   },
   plugins: [],

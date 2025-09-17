@@ -76,63 +76,57 @@ sticky-scroll-section-Stix:
 
 
 <section>
-    <div class="max-w-screen-xl mx-auto grid grid-cols-3 gap-8">
-        <div class="grid gap-4">
-            {% for image in page.sticky-scroll-section-ocean-kitchen %}
-                <div class="relative w-full">
-                    <img class="w-full" src="{{image.image}}" alt="image.alt">
+    <div class="max-w-screen-xl mx-auto md:grid grid-cols-3 gap-8">
 
-                </div>
-            {% endfor %}
-        </div>
         <div class="col-span-2">
-            <div class="min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
+            <div class="md:min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
                 <div class="text-right">
                     <h3>ALL DAY DINING</h3>
                 </div>
                 
-                <div class="relative">
+                <div class="relative hidden md:block">
                     <img src="/uploads/Brand Illustration_F&B_Martini_IHG_Indigo.svg" alt="Martini glass with two olives" class="right-0 absolute -top-[-5vh]">
                 </div>
 
                 <div class="lg:w-2/3">
                     <h2>Ocean Kitchen</h2>
                     <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
-                    <P> <a href="" class="button">SEE MENU</a> <a class="button ml-6 inline-block" href="BOOK NOW">MAKE A RESERVATION</a></P>
+                    <P class="flex flex-wrap gap-6"> <a href="" class="button">SEE MENU</a> <a class="button inline-block" href="BOOK NOW">MAKE A RESERVATION</a></P>
                 </div>
                 
             </div>
         </div>
-
+        <div class="gap-4 order-1 overflow-x-scroll flex flex-nowrap md:grid md:order-1">
+            {% for image in page.sticky-scroll-section-ocean-kitchen %}
+                    <img class="h-[30vh] w-auto md:h-auto max-w-[inital] md:w-full shrink-0" src="{{image.image}}" alt="image.alt">
+            {% endfor %}
+        </div>
     </div>
 </section>
 
 <section>
-    <div class="max-w-screen-xl mx-auto grid grid-cols-3 gap-8">
+    <div class="max-w-screen-xl mx-auto md:grid grid-cols-3 gap-8">
 
         <div class="col-span-2">
-            <div class="min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
+            <div class="md:min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
                 <div class="text-left">
                     <h3>COCKTAILS & CRAFT INFUSIONS</h3>
                 </div>
-                <div>
+                <div class="hidden md:block">
                     <img src="/uploads/Brand Illustration_F&B_Wine Bottle Half_IHG_Indigo.svg" alt="wind bottle">
                 </div>
                 
                 <div class="md:w-2/4">
                     <h2>Tiki Bar</h2>
                     <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
-                    <P> <a href="" class="button">SEE MENU</a> <a class="button ml-6 inline-block" href="BOOK NOW">MAKE A RESERVATION</a></P>
+                    <P class="flex flex-wrap gap-6"> <a href="" class="button">SEE MENU</a> <a class="button inline-block" href="BOOK NOW">MAKE A RESERVATION</a></P>
                 </div>
                 
             </div>
         </div>
-        <div class="grid gap-4">
+        <div class="gap-4 overflow-x-scroll flex flex-nowrap md:grid">
             {% for image in page.sticky-scroll-section-Tiki %}
-                <div class="relative w-full">
-                    <img class="w-full" src="{{image.image}}" alt="image.alt">
-
-                </div>
+                    <img class="h-[30vh] w-auto md:h-auto max-w-[inital] md:w-full shrink-0" src="{{image.image}}" alt="image.alt">
             {% endfor %}
         </div>
     </div>
@@ -140,7 +134,7 @@ sticky-scroll-section-Stix:
 
 <section class="bg-yellow text-white p-[min(20vw,_20vh)]">
         <div class="max-w-screen-s mx-auto">
-            <h2 class="relative -bottom-12 text-2xl z-20 text-center mx-auto" style="max-width: 46rem;">A modern spin on traditional satay</h2>
+            <h2 class="relative -bottom-12 text-lg md:text-2xl z-20 text-center mx-auto" style="max-width: 46rem;">A modern spin on traditional satay</h2>
             <div class="aspect-square relative overflow-hidden">
                 <video class="absolute top-0 left-0 h-full w-full object-cover z-10" autoplay muted loop>
                     <source src="/test-50k-kbs-wave-hb.mp4" type="video/mp4">
@@ -154,33 +148,30 @@ sticky-scroll-section-Stix:
 
 
 <section class="text-rust">
-    <div class="max-w-screen-xl mx-auto grid grid-cols-3 gap-8">
-        <div class="grid gap-4">
-            {% for image in page.sticky-scroll-section-Stix %}
-                <div class="relative w-full">
-                    <img class="w-full" src="{{image.image}}" alt="image.alt">
+    <div class="max-w-screen-xl mx-auto md:grid grid-cols-3 gap-8">
 
-                </div>
-            {% endfor %}
-        </div>
         <div class="col-span-2">
-            <div class="min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
+            <div class="md:min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
                 <div class="text-right">
                     <h3>SATAY BAR</h3>
                 </div>
                 
-                <div class="relative text-right">
+                <div class="relative text-right hidden mg:block">
                     <img src="/uploads/olives.svg" alt="three olives">
                 </div>
 
                 <div class="lg:w-2/3">
-                    <h2 class="text-2xl">STIX</h2>
+                    <h2 class="text-lg md:text-2xl">STIX</h2>
                     <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
                     <P> <a href="" class="button">SEE MENU</a> <a class="button ml-6 inline-block" href="BOOK NOW">MAKE A RESERVATION</a></P>
                 </div>
                 
             </div>
         </div>
-
+        <div class="gap-4 overflow-x-scroll flex flex-nowrap md:grid md:order-1">
+            {% for image in page.sticky-scroll-section-Stix %}
+                    <img class="h-[30vh] w-auto md:h-auto max-w-[inital] md:w-full shrink-0" src="{{image.image}}" alt="image.alt">
+            {% endfor %}
+        </div>
     </div>
 </section>
