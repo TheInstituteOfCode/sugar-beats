@@ -816,8 +816,8 @@ body svg,body img {
   margin-bottom: 1em;
 }
 
-.ml-6 {
-  margin-left: 1.5rem;
+.mb-\[20vh\] {
+  margin-bottom: 20vh;
 }
 
 .mt-2 {
@@ -836,14 +836,6 @@ body svg,body img {
   margin-top: 2rem;
 }
 
-.mb-\[20vh\] {
-  margin-bottom: 20vh;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
 }
@@ -858,22 +850,6 @@ body svg,body img {
 
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-
-.aspect-\[1\/2\] {
-  aspect-ratio: 1/2;
-}
-
-.aspect-\[2\/3\] {
-  aspect-ratio: 2/3;
-}
-
-.aspect-\[4\/5\] {
-  aspect-ratio: 4/5;
-}
-
-.aspect-\[3\/4\] {
-  aspect-ratio: 3/4;
 }
 
 .h-\[30vh\] {
@@ -898,6 +874,10 @@ body svg,body img {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[60vh\] {
+  min-height: 60vh;
 }
 
 .w-16 {
@@ -968,20 +948,12 @@ body svg,body img {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .flex-col {
   flex-direction: column;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
 }
 
 .flex-nowrap {
@@ -1018,10 +990,6 @@ body svg,body img {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
 }
 
 .gap-8 {
@@ -1320,9 +1288,6 @@ body svg,body img {
   .sm\:min-h-\[100vh\] {
     min-height: 100vh;
   }
-  .sm\:min-h-\[110vh\] {
-    min-height: 110vh;
-  }
   .sm\:w-2\/5 {
     width: 40%;
   }
@@ -1389,14 +1354,11 @@ body svg,body img {
   .md\:min-h-\[80vh\] {
     min-height: 80vh;
   }
-  .md\:min-h-screen {
-    min-height: 100vh;
-  }
   .md\:min-h-\[90vh\] {
     min-height: 90vh;
   }
-  .md\:w-2\/4 {
-    width: 50%;
+  .md\:min-h-screen {
+    min-height: 100vh;
   }
   .md\:w-auto {
     width: auto;
