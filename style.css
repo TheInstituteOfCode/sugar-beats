@@ -111,7 +111,7 @@ body svg,body img {
 }
 /*this is where you can change the color of the buttons */
 .burger-button span{
-  width: 4rem;
+  width: 3rem;
   border: 2px solid var(--blue);
   background-color: var(--blue);
   display: block;
@@ -183,7 +183,12 @@ body svg,body img {
 }
 
 
+@media (min-width: 768px)  {
+  .burger-button span{
+    width: 4rem;
+   }
 
+}
 
 
 
