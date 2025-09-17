@@ -25,6 +25,9 @@ module.exports = {
         xl:   '4rem', 
         '2xl':'5rem', 
       },
+      size: {
+        'side-gap'
+      }
     },
   },
   plugins: [],
