@@ -65,34 +65,44 @@ sleep-grid:
 </section>
 
 
-<section class="bg-blue text-cream py-[20%]">
-        <div class="max-w-screen-xl mx-auto grid grid-cols-12">
-            <div class="col-span-5 row-span-3 relative" style="grid-column-start: 1;
-  grid-row-start: 1;">
-                <img src="/uploads/day-1.jpg" alt="">
-                <div class="absolute w-[50%] -right-[5%] -bottom-[15%]">
-                    <img src="/uploads/day-2.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-span-7 px-8">
+<section class="bg-blue text-cream md:py-[20%]">
+        <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-12">
+
+            <div class="col-span-7 px-8 md:order-2">
                 {% include day-dreaming.html %}
             </div>
-            <!-- spacer -->
-             <!-- <div class="col-span-1"></div> -->
-
-             <div class=" col-start-7 col-span-4">
+            
+            <div class=" col-start-7 col-span-4 md:order-3 mb-8">
                 <p>SugarBeats is your barefoot escape on Bintan’s coast. Think lazy afternoons with a cold drink in hand, fresh bites straight from the kitchen, and live beats rolling in as the sun goes down. Take a dip in our oceanfront swimming pool, pick one of the countless daybeds to lounge on and watch the world go by. </p>
                 <p><a href="/book" class="button-rounded border-cream mt-2">Book your day pass</a></p>
              </div>
+
+            <div class="col-span-5 row-span-3 relative md:order-1" style="grid-column-start: 1;
+  grid-row-start: 1;">
+                <img src="/uploads/day-1.jpg" alt="">
+                <div class="hidden md:block absolute w-[50%] right-[5%] md:-right-[5%] bottom-[5%] md:-bottom-[15%]">
+                    <img src="/uploads/day-2.jpg" alt="">
+                </div>
+            </div>
+
+
+            <!-- spacer -->
+             <!-- <div class="col-span-1"></div> -->
+
+
         </div>  
 </section>
 
 <section class="bg-blue text-cream pb-[20%]">
-        <div class="max-w-screen-xl mx-auto grid grid-cols-12">
+        <div class="max-w-screen-xl mx-auto md:grid grid-cols-12">
             <div class="col-span-5">
                 <div class="text-left">
                     {% include summer-nights.html %}
                 </div>
+            </div>
+            <div class="col-span-4 col-start-2 md:order-3 mb-8">
+                <p>In the evenings Sugarbeats comes alive, watch the sunset over the ocean and then listen to the beats, with live music every weekend and a curated playlist all week. Try one of our curated cocktails, and enjoy one of the best meals you’ll have in Bintan. </p>
+                <p><a href="/" class="button uppercase mt-2">come for dinner</a></p>
             </div>
             <div class="col-start-7 col-span-6 row-span-2">
                 <!-- temp aspec div reomve once correct image added -->
@@ -100,10 +110,7 @@ sleep-grid:
                     <img src="/uploads/night-.jpg" class="absolute w-full h-full inset-0" alt="">
                  </div>
             </div>
-            <div class="col-span-4 col-start-2">
-                <p>In the evenings Sugarbeats comes alive, watch the sunset over the ocean and then listen to the beats, with live music every weekend and a curated playlist all week. Try one of our curated cocktails, and enjoy one of the best meals you’ll have in Bintan. </p>
-                <p><a href="/" class="button uppercase mt-2">come for dinner</a></p>
-            </div>
+
         </div>  
 </section>
 <!-- temp bg -->
@@ -163,13 +170,15 @@ sleep-grid:
 </section>
 
 
-<section class="bg-blue text-cream">
-    <div class="max-w-screen-xl mx-auto">
+<section class="bg-blue text-cream px-0">
+    <div class="max-w-screen-xl mx-auto p-[5%]">
         <div class="flex justify-between items-center">
             <h2 class="text-lg heading-caps">sleep</h2>
             <p><a href="/temp" class="sub-heading">stay a little longer</a></p>
         </div>
-        <div class="flex flex-nowrap overflow-x-scroll gap-8">
+    </div>
+    <div>
+        <div class="flex flex-nowrap overflow-x-scroll gap-8 px-[var(--side-gap)]">
             {% for item in page.sleep-grid %}
             <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 md:w-1/4">
                 <div class="relative overflow-hidden aspect-square round-t-3xl">

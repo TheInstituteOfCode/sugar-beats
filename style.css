@@ -17,6 +17,7 @@
     --cream: #FEFAEF;
     --yellow: #F6D265;
     --rust: #CC4829;
+    --side-gap: max(5%, 50vw - 640px)
 }
 
 header, footer, section {

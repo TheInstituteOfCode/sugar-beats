@@ -48,11 +48,11 @@ sleep-grid:
 
 
 <section class="bg-blue text-cream">
-        <div class="max-w-screen-xl mx-auto grid grid-cols-12">
-            <div class="col-span-5 row-span-3 relative" style="grid-column-start: 1;
+        <div class="max-w-screen-sm lg:max-w-screen-xl mx-auto lg:grid grid-cols-12">
+            <div class="col-span-5 row-span-3 relative hidden lg:block" style="grid-column-start: 1;
   grid-row-start: 1;">
                 <img src="/uploads/marathon-1.jpg" alt="">
-                <div class="absolute w-[50%] -right-[5%] -bottom-[15%]">
+                <div class="absolute w-[50%] -right-[5%] -bottom-[15%] hidden md:block">
                     <img src="/uploads/marathon-3.jpg" alt="">
                 </div>
             </div>
@@ -75,20 +75,17 @@ sleep-grid:
 </section>
 
 <section class="bg-blue text-cream">
-        <div class="max-w-screen-xl mx-auto grid grid-cols-12">
-            <div class="col-span-5">
-                <div class="text-right" >
-                    {% include recovery.html %}
-                </div>
-                <div >
-                    {% include lounge.html %}
-                </div>
-            </div>
-            <div class="col-start-7 col-span-6 row-span-2">
+        <div class="max-w-screen-xl mx-auto lg:grid grid-cols-12">
+            <div class="col-start-7 col-span-6 row-span-2 lg:order-2 mb-12">
                 <!-- temp aspec div reomve once correct image added -->
                  <div class="relative" style="aspect-ratio: 676/515;">
                     <img src="/uploads/marathon-2.jpg" class="absolute w-full h-full inset-0" alt="">
                  </div>
+            </div>
+            <div class="col-span-5">
+                <div class="text-center lg:text-right" >
+                    {% include recovery.html %}
+                </div>
             </div>
             <div class="col-span-4 col-start-2">
                 <p>After the race, head to the recovery lounge at Sugarbeats on Lagoi Beach where you’ll find complimentary foot massage station & celebratory drinks (for all runners who completed a race).  Listen to the beats of our live music, watch the sunset over the ocean and celebrate your race. 
@@ -97,6 +94,10 @@ sleep-grid:
             </div>
         </div>  
 </section>
+
+
+
+
 
 <section class="bg-yellow text-white p-[min(20vw,_20vh)]">
         <div class="max-w-screen-s mx-auto">
@@ -150,13 +151,20 @@ sleep-grid:
 
 
 
-<section class="bg-blue text-cream">
-    <div class="md:max-w-screen-xl">
-        <div class="flex justify-between items-center">
-            <h2 class="text-lg heading-caps">sleep</h2>
-            <p><a href="/temp" class="sub-heading">stay a little longer</a></p>
+<section class="bg-blue text-cream px-0">
+    <div class="p-[5%]">
+        <div class="mx-auto max-w-screen-xl">
+            <div class="flex justify-between items-center">
+                <h2 class="text-lg heading-caps">sleep</h2>
+                <p><a href="/temp" class="sub-heading">stay a little longer</a></p>
+            </div>
         </div>
-        <div class="flex flex-nowrap overflow-x-scroll gap-8">
+    </div>
+
+
+
+
+        <div class="flex flex-nowrap overflow-x-scroll gap-8 px-[var(--side-gap)]">
             {% for item in page.sleep-grid %}
             <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 md:w-1/4">
                 <div class="relative overflow-hidden aspect-square round-t-3xl">
