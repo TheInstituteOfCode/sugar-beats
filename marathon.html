@@ -116,16 +116,10 @@ sleep-grid:
 </section>
 
 <section class="bg-cream text-blue border-blue border-2 p-4">
-    <div class="grid grid-cols-5 gap-8">
-        <div class="col-span-2 grid gap-4">
-            {% for image in page.sticky-scroll-section %}
-                <div class="relative w-full">
-                    <img class="w-full" src="{{image.image}}" alt="image.alt">
-                </div>
-            {% endfor %}
-        </div>
+    <div class="md:grid grid-cols-5 gap-8">
+
         <div class="col-span-3">
-            <div class="min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
+            <div class="md:min-h-screen p-8 sticky top-0 flex flex-col justify-between gap-8">
                 <div class="text-right">
                     <h3 class="sub-heading text-base">BINTAN LAGOI BEACH</h3>
                 </div>
@@ -145,7 +139,11 @@ sleep-grid:
                 
             </div>
         </div>
-
+        <div class="col-span-2 md:max-h-fit gap-4 order-1 overflow-x-scroll flex flex-nowrap md:grid">
+            {% for image in page.sticky-scroll-section %}
+                    <img class="h-[30vh] w-auto md:h-auto max-w-[inital] md:w-full shrink-0" src="{{image.image}}" alt="image.alt">
+            {% endfor %}
+        </div>
     </div>
 </section>
 

@@ -723,6 +723,10 @@ body svg,body img {
   z-index: 30;
 }
 
+.order-1 {
+  order: 1;
+}
+
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -776,6 +780,10 @@ body svg,body img {
   margin-right: auto;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -804,10 +812,6 @@ body svg,body img {
   margin-top: 0.5rem;
 }
 
-.mb-12 {
-  margin-bottom: 3rem;
-}
-
 .inline-block {
   display: inline-block;
 }
@@ -830,6 +834,14 @@ body svg,body img {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[30vh\] {
+  height: 30vh;
+}
+
+.max-h-\[30vh\] {
+  max-height: 30vh;
 }
 
 .min-h-\[100vh\] {
@@ -864,8 +876,21 @@ body svg,body img {
   width: 100%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-auto {
+  width: auto;
+}
+
 .max-w-\[40\%\] {
   max-width: 40%;
+}
+
+.max-w-\[inital\] {
+  max-width: inital;
 }
 
 .max-w-full {
@@ -1216,11 +1241,27 @@ body svg,body img {
   .md\:grid {
     display: grid;
   }
+  .md\:h-auto {
+    height: auto;
+  }
+  .md\:max-h-fit {
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  .md\:min-h-screen {
+    min-height: 100vh;
+  }
   .md\:w-1\/4 {
     width: 25%;
   }
   .md\:w-2\/4 {
     width: 50%;
+  }
+  .md\:w-full {
+    width: 100%;
+  }
+  .md\:shrink-0 {
+    flex-shrink: 0;
   }
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
