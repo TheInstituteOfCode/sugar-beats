@@ -111,8 +111,8 @@ body svg,body img {
 }
 /*this is where you can change the color of the buttons */
 .burger-button span{
-  width: 3rem;
-  border: 2px solid var(--blue);
+  width: 2.5rem;
+  border: 1px solid var(--blue);
   background-color: var(--blue);
   display: block;
   border-radius: 22px;
@@ -128,11 +128,11 @@ body svg,body img {
 }
 
 .burger-top{
-  top: -02px;
+  top: 5px;
 }
 
 .burger-bottom{
-  bottom: -02px;
+  bottom: 5px;
 }
 /* make sure this has the same top as the burger button has padding*/
 .burger-button.active .burger-top{
@@ -185,7 +185,7 @@ body svg,body img {
 
 @media (min-width: 768px)  {
   .burger-button span{
-    width: 4rem;
+    width: 3rem;
    }
 
 }
