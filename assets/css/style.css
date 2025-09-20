@@ -542,8 +542,8 @@ body svg,body img {
 }
 /*this is where you can change the color of the buttons */
 .burger-button span{
-  width: 3rem;
-  border: 2px solid var(--blue);
+  width: 2.5rem;
+  border: 1px solid var(--blue);
   background-color: var(--blue);
   display: block;
   border-radius: 22px;
@@ -559,11 +559,11 @@ body svg,body img {
 }
 
 .burger-top{
-  top: -02px;
+  top: 5px;
 }
 
 .burger-bottom{
-  bottom: -02px;
+  bottom: 5px;
 }
 /* make sure this has the same top as the burger button has padding*/
 .burger-button.active .burger-top{
@@ -616,7 +616,7 @@ body svg,body img {
 
 @media (min-width: 768px)  {
   .burger-button span{
-    width: 4rem;
+    width: 3rem;
    }
 
 }
@@ -896,10 +896,6 @@ body svg,body img {
   height: 30vh;
 }
 
-.h-\[90vw\] {
-  height: 90vw;
-}
-
 .h-full {
   height: 100%;
 }
@@ -908,16 +904,12 @@ body svg,body img {
   min-height: 50vh;
 }
 
-.min-h-\[80vh\] {
-  min-height: 80vh;
+.min-h-\[60vh\] {
+  min-height: 60vh;
 }
 
 .min-h-screen {
   min-height: 100vh;
-}
-
-.min-h-\[60vh\] {
-  min-height: 60vh;
 }
 
 .w-16 {
@@ -1365,9 +1357,6 @@ body svg,body img {
 }
 
 @media (min-width: 768px) {
-  .md\:static {
-    position: static;
-  }
   .md\:-bottom-\[15\%\] {
     bottom: -15%;
   }
@@ -1397,10 +1386,6 @@ body svg,body img {
   }
   .md\:h-auto {
     height: auto;
-  }
-  .md\:h-min {
-    height: -moz-min-content;
-    height: min-content;
   }
   .md\:min-h-\[80vh\] {
     min-height: 80vh;
