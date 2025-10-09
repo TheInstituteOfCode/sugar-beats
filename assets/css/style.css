@@ -662,6 +662,10 @@ body svg,body img {
   bottom: -3rem;
 }
 
+.-bottom-8 {
+  bottom: -2rem;
+}
+
 .-bottom-\[15\%\] {
   bottom: -15%;
 }
@@ -716,26 +720,6 @@ body svg,body img {
 
 .top-8 {
   top: 2rem;
-}
-
-.-top-12 {
-  top: -3rem;
-}
-
-.-bottom-8 {
-  bottom: -2rem;
-}
-
-.-bottom-10 {
-  bottom: -2.5rem;
-}
-
-.-bottom-16 {
-  bottom: -4rem;
-}
-
-.-bottom-24 {
-  bottom: -6rem;
 }
 
 .z-10 {
@@ -812,6 +796,18 @@ body svg,body img {
   margin-right: auto;
 }
 
+.-ml-4 {
+  margin-left: -1rem;
+}
+
+.-mr-4 {
+  margin-right: -1rem;
+}
+
+.-mt-12 {
+  margin-top: -3rem;
+}
+
 .-mt-16 {
   margin-top: -4rem;
 }
@@ -854,26 +850,6 @@ body svg,body img {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.-mt-12 {
-  margin-top: -3rem;
-}
-
-.-mt-8 {
-  margin-top: -2rem;
-}
-
-.-mt-10 {
-  margin-top: -2.5rem;
-}
-
-.-ml-4 {
-  margin-left: -1rem;
-}
-
-.-mr-4 {
-  margin-right: -1rem;
 }
 
 .flex {
@@ -1249,6 +1225,10 @@ body svg,body img {
   font-size: 10vw;
 }
 
+.text-\[2\.5rem\] {
+  font-size: 2.5rem;
+}
+
 .text-\[7vw\] {
   font-size: 7vw;
 }
@@ -1275,14 +1255,6 @@ body svg,body img {
 
 .text-xl {
   font-size: 4rem;
-}
-
-.text-\[1\.5rem\] {
-  font-size: 1.5rem;
-}
-
-.text-\[2\.5rem\] {
-  font-size: 2.5rem;
 }
 
 .font-bold {
@@ -1357,14 +1329,14 @@ body svg,body img {
 }
 
 @media (min-width: 768px) {
+  .md\:-bottom-12 {
+    bottom: -3rem;
+  }
   .md\:-bottom-\[15\%\] {
     bottom: -15%;
   }
   .md\:-right-\[5\%\] {
     right: -5%;
-  }
-  .md\:-bottom-12 {
-    bottom: -3rem;
   }
   .md\:order-1 {
     order: 1;
