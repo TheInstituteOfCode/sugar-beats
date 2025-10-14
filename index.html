@@ -225,7 +225,7 @@ sleep-grid:
             {% for item in page.sleep-grid %}
             <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 sm:w-2/5 lg:w-1/4">
                 <div class="relative overflow-hidden aspect-square round-t-3xl">
-                    <img src="{{item.image}}" alt="{{image.alt}}" />
+                    <img class="absolute inset-0 h-full w-full object-cover" src="{{item.image}}" alt="{{image.alt}}" />
                 </div>
                 <div class="p-4">
                     <h3 class="sub-heading text-tiny md:text-base">
