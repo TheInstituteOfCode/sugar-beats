@@ -4,16 +4,22 @@ title: Weddings and Events at sugar beats
 wedding-grid:
     -   heading: Sekasih Pavilion
         image: /uploads/events-gallery-3.jpg
+        alt:
     -   heading: Ocean view Swimming Pools
         image: /uploads/events-gallery-1.jpg
+        alt:
     -   heading: Lush gardens & resort grounds
         image: /uploads/events-gallery-6.jpg
+        alt:
     -   heading: Stunning Lagoi Beach
         image: /uploads/events-gallery-2.jpg
+        alt:
     -   heading: Exclusive Beach Club Access
         image: /uploads/events-gallery-4.jpg
+        alt:
     -   heading: Watersports & Activities
         image: /uploads/events-gallery-5.jpg
+        alt:
 sticky-scroll-celebrations:
     -   image: /uploads/event-3.jpg
         alt: food
@@ -66,7 +72,7 @@ sticky-scroll-events:
             {% for item in page.wedding-grid %}
                 <div class="shrink-0 w-4/5 md:basis-[400px]">
                     <div class="relative mb-6" style="aspect-ratio: 2/3;">
-                        <img class="absolute inset-0 object-cover object-center h-full w-full" src="{{item.image}}" alt="">
+                        <img class="absolute inset-0 object-cover object-center h-full w-full" src="{{item.image}}" alt="{{item.alt}}">
                     </div>
                     <p class="text-blue heading-caps"> {{item.heading}}</p>
 
