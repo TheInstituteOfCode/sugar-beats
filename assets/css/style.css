@@ -852,6 +852,10 @@ body svg,body img {
   display: flex;
 }
 
+.table {
+  display: table;
+}
+
 .grid {
   display: grid;
 }
