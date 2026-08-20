@@ -1294,9 +1294,6 @@ body svg,body img {
   .sm\:flex {
     display: flex;
   }
-  .sm\:hidden {
-    display: none;
-  }
   .sm\:min-h-\[100vh\] {
     min-height: 100vh;
   }

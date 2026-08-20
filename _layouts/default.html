@@ -7,7 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.typekit.net/emv3zig.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    <title>{{page.title}}</title>
+
+    
+    <link rel="icon" type="image/x-icon" href="{{page.seo.favicon | default: site.data.seo.favicon_image}}">
+    
+    <!-- meta-fields -->
+    <title>{{page.seo.title | default: site.data.seo.title }}</title>
+    <meta name="description" content="{{page.seo.description | default: site.data.seo.description}}">
+    <meta property="og:image" content="{{page.data.seo.image | default: site.data.seo.image}}"/>
+    
+    <meta name="google" content="nositelinkssearchbox">
+    {% if site.data.seo.google-site-verification %}
+      {{site.data.seo.google-site-verification}}
+    {% endif %}
 </head>
 
 <body>
