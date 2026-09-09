@@ -50,8 +50,12 @@ _inputs:
   bg-video:
     type: file
   block-content:
-    type: HTML
-
+    type: html
+    options:
+        bold: true
+        italic: true
+        underline: true
+        format: p h3 a
 _structures:
   blocks:
     style: modal
