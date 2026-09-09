@@ -51,8 +51,8 @@ _inputs:
     type: file
   block-content:
     type: html
-    styles: /editor.css
     options:
+        styles: /editor.css 
         bold: true
         italic: true
         underline: true
