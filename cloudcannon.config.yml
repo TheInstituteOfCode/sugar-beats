@@ -47,6 +47,11 @@ _inputs:
     type: text
     hidden: true
     cascade: true
+  bg-video:
+    type: file
+  block-content:
+    type: HTML
+
 _structures:
   blocks:
     style: modal
@@ -115,7 +120,7 @@ _structures:
           _id: sticky-gallery
           heading_sub: WEDDINGS, BIRTHDAYS &amp; SPECIAL EVENTS
           heading: Celebrations
-          content: >
+          block-content: >
               <p class="">
                           From milestone birthdays to anniversaries and special events, Hotel Indigo Bintan is the perfect place to celebrate. Our team can curate the perfect trip for groups big and small - whether you’re looking for a private beachfront dinner &amp; bonfire, a private omakase dinner at Stix or a pool party at SugarBEATS we’ve got you covered.
                       </p>
