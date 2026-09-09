@@ -1,0 +1,154 @@
+_schema: _schema
+paths:
+  uploads: uploads
+  static: ''
+  dam_uploads: ''
+  dam_static: ''
+  collections: ''
+  data: _data
+  layouts: _layouts
+  includes: _includes
+collections_config:
+  pages:
+    path: ''
+    icon: notes
+    output: true
+    filter: strict
+    description: ''
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default page:
+        path:
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        name:
+        icon: notes
+        preview:
+        _editables:
+        _inputs:
+        _select_data:
+        _structures:
+        create:
+        new_preview_url:
+_inputs:
+  layout:
+    type: text
+    hidden: true
+    cascade: true
+  _id:
+    type: text
+    hidden: true
+    cascade: true
+_structures:
+  blocks:
+    style: modal
+    values:
+      - label: video banner
+        picker_preview:
+          text: video banner
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: 
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: banner-video
+          bg-video: /uploads/sugarbeats-wedding.mp4
+          video-type: mp4
+          text-image: /uploads/celebrate-in-bintan.svg
+          bg-image: /uploads/wedding.jpg
+          height: 60
+      - label: slide-gallery
+        picker_preview:
+          text: slide-gallery
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: 
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: slide-gallery
+          heading: The perfect venue for your wedding or event
+          text: Whether you're planning an intimate elopement or a beachfront celebration, we’ve got the perfect setting (and expert tips) to bring your oceanside wedding dreams to life. Choose between the stunning Sekisah Pavilion, a garden ceremony or right on the white sand beach itself, and then treat your guests to an incredible wedding weekend with all the resort amenities at your fingertips.
+          grid-items:
+              -
+                  heading: Sekasih Pavilion
+                  image: /uploads/events-gallery-3.jpg
+                  alt: >-
+                      Sekasih Pavilion wedding ceremony setup at SugarBEATS Bintan with
+                      ocean backdrop
+      - label: sticky-gallery
+        picker_preview:
+          text: sticky-gallery
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: 
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: sticky-gallery
+          heading_sub: WEDDINGS, BIRTHDAYS &amp; SPECIAL EVENTS
+          heading: Celebrations
+          content: >
+              <p class="">
+                          From milestone birthdays to anniversaries and special events, Hotel Indigo Bintan is the perfect place to celebrate. Our team can curate the perfect trip for groups big and small - whether you’re looking for a private beachfront dinner &amp; bonfire, a private omakase dinner at Stix or a pool party at SugarBEATS we’ve got you covered.
+                      </p>
+                      <p>
+                      </p>
+                      <p class="">
+                          And while you’re here, enjoy all the facilities on offer from watersports to a our onsite gym &amp; spa.
+                      </p>
+                      <a class="button-rounded ">
+                              LEARN MORE
+                      </a>
+                      <p></p>
+          gallery:
+                  -
+                      image: /uploads/event-3.jpg
+                      alt: >-
+                          Private celebration dinner setup at beachfront SugarBEATS Bintan
+                          event venue
+      - label: form
+        picker_preview:
+          text: form
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: 
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: form
+          heading: Get in touch
+          bg-image: /uploads/Home-1.jpg

@@ -1,0 +1,32 @@
+
+<section class="bg-cream text-blue border-blue border-2 md:p-4">
+    <div class="md:grid grid-cols-5 gap-8">
+
+        <div class="col-span-3">
+            <div class="md:min-h-screen p-8 md:p-8 sticky top-0 flex flex-col justify-between gap-8">
+                <div class="text-right">
+                    <h3 class="sub-heading text-base ">
+                        {{block.heading_sub}}
+                    </h3>
+                </div>
+            
+
+                <div class="lg:w-2/3">
+                    <h2 class="text-lg md:text-xl ">
+                        {{block.heading}}
+                    </h2>
+                    {{block.content}}
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-span-2 gap-4 order-1 overflow-x-scroll flex flex-nowrap md:grid md:order-1">
+            {% for image in block.gallery %}
+                    <img class="h-[30vh] w-auto md:h-auto max-w-[inital] md:w-full shrink-0" src="{{image.image}}" alt="image.alt" />
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+

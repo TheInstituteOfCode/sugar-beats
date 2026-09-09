@@ -848,6 +848,10 @@ body svg,body img {
   margin-top: 2rem;
 }
 
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
 }
@@ -878,10 +882,6 @@ body svg,body img {
 
 .min-h-\[50vh\] {
   min-height: 50vh;
-}
-
-.min-h-\[60vh\] {
-  min-height: 60vh;
 }
 
 .min-h-screen {

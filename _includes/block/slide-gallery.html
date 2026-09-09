@@ -1,0 +1,21 @@
+<section class="px-0 py-[10vh] bg-lightblue">
+        <div class="px-[5%] max-w-screen-lg mx-auto text-center">
+            <h2 class="text-lg md:text-2xl text-blue">
+                {{block.heading}}
+            </h2>
+            <p class="pb-[5vh] text-blue">
+                {{block.text}}
+            </p>
+        </div>
+        <div class="flex flex-nowrap gap-4 overflow-x-scroll p-4">
+            {% for item in block.grid-items %}
+                <div class="shrink-0 w-4/5 md:basis-[400px]">
+                    <div class="relative mb-6" style="aspect-ratio: 2/3;">
+                        <img class="absolute inset-0 object-cover object-center h-full w-full" src="{{item.image}}" alt="{{item.alt}}" />
+                    </div>
+                    <p class="text-blue heading-caps"> {{item.heading}}</p>
+
+                </div>
+            {% endfor %}
+        </div>
+</section>

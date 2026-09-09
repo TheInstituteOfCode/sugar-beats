@@ -54,6 +54,19 @@
         </div>
 
     </header>
+
+  {% if page.blocks %}
+    
+    {% for block in page.blocks %}
+          <div class="scheme-{{block.color-scheme}} relative" id="section-{{forloop.index}}">
+            {% comment %} to figure out what block you added in inspect {% endcomment %}
+              <!--{{block._id}} -->
+              {% include /block/{{block._id}}.html %}
+          </div>
+
+    {% endfor %}
+    
+    {% endif %}
     {{content}}
 
     

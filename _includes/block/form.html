@@ -1,0 +1,17 @@
+
+<section class="bg-contain bg-cream bg-repeat-x bg-bottom py-[10vh] md:pt-[20vh] md:pb-[50vh] text-blue" style="background-image: url('{{block.bg-image}}');">
+    <div class="max-w-screen-xl mx-auto">
+    <h2 class="text-lg text-center">
+        {{block.heading}}
+    </h2>
+    <form name="weddings-and-events" method="POST" data-netlify="true" class="flex flex-col justify-center max-w-screen-sm gap-4 mx-auto *placeholder:text-blue">
+        <input type="text" placeholder="Name" name="Name" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue" />
+        <input type="email" placeholder="Email" name="Email" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue" />
+        <input type="tel" placeholder="Phone" name="Phone" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue" />
+        <input type="text" placeholder="Type of Enquiry" name="Enquiry type" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue" />
+        <textarea name="message" placeholder="Message" class="bg-cream border-blue border border-2 text-blue p-4 placeholder:text-blue"></textarea>
+        <button type="submit" class="button-rounded bg-blue text-cream mx-auto">Submit</button>
+
+    </form>
+    </div>
+</section>
