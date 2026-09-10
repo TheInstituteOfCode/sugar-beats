@@ -1,0 +1,54 @@
+<section class="bg-blue text-cream md:py-[20%]">
+        <div class="max-w-screen-xl mx-auto md:grid md:grid-cols-12">
+
+            <div class="col-span-7 md:px-8 md:order-2">
+                {% include day-dreaming.html %}
+            </div>
+            
+            <div class=" col-start-7 col-span-4 md:order-3 mb-8">
+                {{block.block-content}}
+                <p><a href="https://wa.me/6285364947066" class="button-rounded border-cream mt-2 editable">
+    Book your day pass
+</a></p>
+            </div>
+
+            <div class="col-span-5 row-span-3 relative md:order-1" style="grid-column-start: 1;
+  grid-row-start: 1;">
+                <img class="" src="{{block.back-image}}" alt="{{block.back-alt}}" />
+                <div class="hidden md:block absolute w-[50%] right-[5%] md:-right-[5%] bottom-[5%] md:-bottom-[15%]">
+                    <img src="{{block.front-image}}" alt="{{block.front-alt}}" class="" />
+                </div>
+            </div>
+
+
+            <!-- spacer -->
+             <!-- <div class="col-span-1"></div> -->
+
+
+        </div>  
+</section>
+
+<section class="bg-blue text-cream pb-[20%]">
+        <div class="max-w-screen-xl mx-auto md:grid grid-cols-12">
+            <div class="col-span-5">
+                <div class="text-left">
+                    {% include summer-nights.html %}
+                </div>
+            </div>
+            <div class="col-span-4 col-start-2 md:order-3 mb-8">
+                <p class="editable">
+                    In the evenings SugarBEATS comes alive, watch the sunset over the ocean and then listen to the beats, with live music every weekend and a curated playlist all week. Try one of our curated cocktails, and enjoy one of the best meals you’ll have in Bintan.
+                </p>
+                <p><a href="https://www.tablecheck.com/en/ihg-indigo-bintan-sugar-beats/reserve/landing?utm_content=profile_cta&amp;utm_medium=social&amp;utm_source=instagram" class="button-rounded uppercase mt-2 editable">
+    come for dinner
+</a></p>
+            </div>
+            <div class="col-start-7 col-span-6 row-span-2">
+                <!-- temp aspec div reomve once correct image added -->
+                 <div class="relative" style="aspect-ratio: 676/515;">
+                    <img src="/uploads/night-.jpg" class="absolute w-full h-full inset-0 editable" alt="" />
+                 </div>
+            </div>  
+
+        </div>  
+</section>

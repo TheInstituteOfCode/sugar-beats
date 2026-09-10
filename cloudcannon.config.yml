@@ -24,7 +24,7 @@ collections_config:
     disable_file_actions: false
     schemas:
       default page:
-        path:
+        path: .cloudcannon/schemas/page.html
         reorder_inputs: true
         hide_extra_inputs: false
         remove_empty_inputs: false
