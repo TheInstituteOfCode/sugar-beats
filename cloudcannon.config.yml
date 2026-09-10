@@ -11,7 +11,7 @@ paths:
 collections_config:
   pages:
     schemas:
-      page:
+      default:
         name: page
         path: _schemas/page.html
         
