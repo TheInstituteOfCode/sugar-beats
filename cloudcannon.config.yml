@@ -13,7 +13,7 @@ collections_config:
     schemas:
       default:
         name: page
-        path: _schemas/page.html
+        path: _schema/page.html
         
 _inputs:
   layout:
