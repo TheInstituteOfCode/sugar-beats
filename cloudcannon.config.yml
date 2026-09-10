@@ -55,6 +55,7 @@ _inputs:
     type: file
   block-content:
     type: html
+    label: main text
     options:
         styles: /editor.css 
         bold: true

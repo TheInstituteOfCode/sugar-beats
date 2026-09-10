@@ -1,3 +1,33 @@
 a.button-rounded {
     border: 2px solid;
 }
+
+h2.heading {
+    font-size: 2rem 
+}
+
+h3.tiny-heading{
+    font-size: 0.8rem;
+    font-family: 'ivyepic';
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+p.constrained {
+    max-width: 640px;
+    margin: auto;
+    text-align:center;
+}
+
+
+
+@media (min-width: 640px) {
+    h2.heading {
+    font-size: 3rem
+    }
+    h3.tiny-heading{
+        font-size: 1.5rem
+    }
+
+}

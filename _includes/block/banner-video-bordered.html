@@ -1,0 +1,13 @@
+<section class="bg-blue">
+        <div class="max-w-screen-xl mx-auto relative">
+            <video autoplay muted loop playsinline>
+                <source src="{{block.bg-video}}" type="video/mp4" />
+                <!-- <source src="movie.ogg" type="video/ogg"> -->
+            </video>
+            <h2 class="heading-block text-md md:text-xl text-white absolute top-8 left-8">
+                {% for text in block.heading-stacked %}
+                {{text}} {% unless forloop.last %} <br />{% endunless %}
+                {% endfor %}
+             </h2> 
+        </div>
+</section>
