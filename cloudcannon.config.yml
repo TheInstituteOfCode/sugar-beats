@@ -20,6 +20,11 @@ _inputs:
     type: text
     hidden: true
     cascade: true
+    _inputs:
+  blocks:
+    type: array
+    options:
+      structures: blocks
   _id:
     type: text
     hidden: true
