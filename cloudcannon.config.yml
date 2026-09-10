@@ -23,8 +23,8 @@ collections_config:
     disable_add_folder: false
     disable_file_actions: false
     schemas:
-      default page:
-        path: /schemas/page.html
+      default_page:
+        path: schemas/page.html
         reorder_inputs: true
         hide_extra_inputs: false
         remove_empty_inputs: false
