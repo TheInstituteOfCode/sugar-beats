@@ -48,6 +48,10 @@ _inputs:
     hidden: true
     cascade: true
   bg-video:
+    label: background video
+    type: file
+  bg-image:
+    label: background image
     type: file
   block-content:
     type: html
