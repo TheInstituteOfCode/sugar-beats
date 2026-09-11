@@ -70,6 +70,26 @@ _structures:
           text-image: /uploads/celebrate-in-bintan.svg
           bg-image: /uploads/wedding.jpg
           height: 60
+      - label: video between two headings
+        picker_preview:
+          text: video between two headings
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: 
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: text-video-text
+          heading-top: A WEEKEND AWAY
+          heading-bottom: AT HOTEL INDIGO BINTAN
+          video: /test-50k-kbs-wave-hb.mp4
+          video-type: mp4
       - label: slide-gallery
         picker_preview:
           text: slide-gallery
