@@ -32,6 +32,9 @@ _inputs:
   bg-video:
     label: background video
     type: file
+  video:
+    label: video
+    type: file
   bg-image:
     label: background image
     type: file
