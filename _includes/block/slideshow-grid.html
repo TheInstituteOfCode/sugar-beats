@@ -1,0 +1,27 @@
+
+<section class="bg-cream text-rust">
+    <div class="max-w-screen-xl mx-auto grid md:grid-cols-2 gap-16">
+        <div class="col-span-full text-center">
+            <img src="{{block.heading-image}}" alt="{{block.heading-image-alt}}" class="w-16 mt-8 md:w-auto md:mt-2" />
+        </div>
+        {% for column in block.columns %}
+        <div>
+            <h3 class="text-md sm:text-xl">
+                {{column.heading}}
+            </h3>
+            <p class="">
+                Fresh from the sea, straight to your plate. Ocean Kitchen celebrates Bintan’s coastal bounty with dishes that spotlight the day’s catch and the flavors of the island. Whether it’s grilled seafood by the beach or inventive takes on Indonesian classics, we've got something for everyone.
+            </p>
+            <p class="">
+                <a href="https://drive.google.com/file/d/1j9xXJ5WShK1opZct-OwEFRaov0XUAYmn/view?usp=drive_link" target="_blank" rel="noopener">SEE MENU {% include orange-arrow.html %}</a>
+            </p>
+            <div class="aspect-square carousels relative">
+                <img class="main-image h-full w-full inset-0 absolute object-cover" src="{{page.carousel-1[0].image}}" alt="{{page.carousel-1[0].alt}}" />
+                <div class="carosel-alt-images absolute left-[100vw]">
+                    {% for image in column.images %}
+                    <img src="{{image.image}}" alt="{{image.alt}}" />
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+{% endfor %}

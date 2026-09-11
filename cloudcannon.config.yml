@@ -150,3 +150,86 @@ _structures:
           _id: form
           heading: Get in touch
           bg-image: /uploads/Home-1.jpg
+      - label: slideshow grid
+        picker_preview:
+          text: slideshow grid
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: 
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: slideshow-grid
+          heading-image: /uploads/squiggles.png
+          heading-image-alt:
+          columns:
+              - 
+                  heading: Ocean Kitchen
+                  text: Fresh from the sea, straight to your plate. Ocean Kitchen celebrates Bintan’s coastal bounty with dishes that spotlight the day’s catch and the flavors of the island. Whether it’s grilled seafood by the beach or inventive takes on Indonesian classics, we've got something for everyone.
+                  link: https://drive.google.com/file/d/1j9xXJ5WShK1opZct-OwEFRaov0XUAYmn/view?usp=drive_link
+                  link-text: SEE MENU
+                  images:
+                          - 
+                              image: /uploads/ocean-kitchen-1.jpg
+                              alt: Hands sharing colorful Asian dishes and desserts over a wooden dining table, Ocean Kitchen Bintan
+                          - 
+                              image: /uploads/ocean-kitchen-2.jpg
+                              alt: Ocean Kitchen restaurant interior with lounge seating, dining tables and wood ceiling, SugarBEATS Bintan
+                          - 
+                              image: /uploads/ocean-kitchen-3.jpg
+                              alt: Table setting with ocean and palm tree view through open-air seating, Ocean Kitchen Bintan
+                          - 
+                              image: /uploads/ocean-kitchen-4.jpg
+                              alt: Bright and elegant dining interior at Ocean Kitchen overlooking the tropical surroundings of Bintan
+                          - 
+                              image: /uploads/ocean-kitchen-5.jpg
+                              alt: Couple toasting colorful drinks at beachfront table with palm trees and loungers, Ocean Kitchen Bintan
+              - 
+                  heading: Stix
+                  text: Stix, a 16-seat restaurant &amp; bar where we take the beloved Indonesian satay and infuse it with a modern twist. Using the freshest locally sourced ingredients and traditional techniques we honor the island’s rich culinary heritage while taking inspiration from global cuisine.
+                  link: https://drive.google.com/file/d/1NV44w8rZkJ3kbD2vvCHTFGUKabOMcal9/view?usp=drive_link
+                  link-text: SEE MENU
+                  images:
+                          - 
+                              image: /uploads/stix-1.jpg
+                              alt: Chef grilling skewers over open flame with sparks flying, Stix satay bar Bintan
+                          - 
+                              image: /uploads/stix-2.jpg
+                              alt: Open kitchen counter seating with pendant lights and chef at grill station, Stix Bintan
+                          - 
+                              image: /uploads/stix-3.jpg
+                              alt: Pouring drink beside plated satay skewers on grill rack, marble bar counter, Stix Bintan
+                          - 
+                              image: /uploads/stix-4.jpg
+                              alt: Open kitchen counter seating with pendant lights and chef at grill station, Stix Bintan
+      - label: full height text section
+        picker_preview:
+          text: full height text section
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: 
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: full-height-text-section
+          block-content: >
+              <h3 class="tiny-heading">
+                  AN OCEANFRONT BEACH CLUB IN BINTAN
+              </h3>
+              <h2 class="heading">
+                  SugarBEATS is Bintan’s best beach club, a spot to eat, drink and play and watch the world go past all with a dreamy ocean backdrop.
+              </h2>
+                  <p class="constrained">Set on one of Bintan’s most stunning stretches of beach, SugarBEATS blends ocean views, curated music, and elevated dining into one unforgettable experience. By day, unwind by the water. By night, let the music move you. </p>
+          bg-image: /uploads/palm-trees.jpg
