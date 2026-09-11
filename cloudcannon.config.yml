@@ -24,7 +24,7 @@ _inputs:
   blocks:
     type: array
     options:
-      structures: blocks
+      structures: _structures.blocks
   _id:
     type: text
     hidden: true
