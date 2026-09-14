@@ -33,14 +33,11 @@
                     <span class="burger-bottom"></span>
                 </div>
                 <div class="burger-menu bg-cream text-blue gap-2">
-                    <a class="heading" href="/">Home</a>
-                    <a class="heading" href="/restaurant">Restaurants</a>
-                    <!-- <a class="sub-heading " href="/whats-on.html">whats on</a> -->
-                    <a class="heading" href="/weddings-and-events">Weddings & Events</a>
-
-                    <a class="heading" href="/Marathon">Bintan Marathon <br> Recovery Lounge</a>
+                    {% for link in site.data.navigation.header-nav %}
+                    <a class="heading" href="{{link.link}}">{{link.text}}</a>
+                    {% endfor %}
                     <div class="pl-[15px] pt-2">
-                        <a class="button bg-blue text-cream" href="https://wa.me/6285364947066">Book Now</a>
+                        <a class="button bg-blue text-cream" href="{{site.data.navigation.header-book-now-button.link}}">{{site.data.navigation.header-book-now-button.text}}</a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,16 @@
+header-nav:
+  - 
+    text: Home
+    link: /
+  -  
+    text: Restaurants
+    link: /restaurant
+  - 
+    text: Weddings & Events
+    link: /weddings-and-events
+  - 
+    text: Bintan Marathon <br> Recovery Lounge
+    link: /Marathon
+header-book-now-button:
+    text: Book Now
+    link: https://wa.me/6285364947066
