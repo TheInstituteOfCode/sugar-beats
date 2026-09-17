@@ -8,3 +8,9 @@ color-themes:
   - name: light-blue
     background-color: "##E1EDF2"
     text-color: "#2F5992"
+  - name: text-rust
+    background-color: "#FEFAEF"
+    text-color: "#CC4829"
+  - name: yellow
+    background-color: "#F6D265"
+    text-color: "#fff"

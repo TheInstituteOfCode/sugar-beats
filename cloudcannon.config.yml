@@ -118,9 +118,10 @@ _structures:
           heading-bottom: AT HOTEL INDIGO BINTAN
           video: /test-50k-kbs-wave-hb.mp4
           video-type: mp4
-      - label: slide-gallery
+          style: yellow
+      - label: slide gallery
         picker_preview:
-          text: slide-gallery
+          text: slide gallery
           subtext:
           icon:
           icon_color:
@@ -146,7 +147,7 @@ _structures:
                       
       - label: slide gallery card
         picker_preview:
-          text: slide-gallery card
+          text: slide gallery card
           subtext:
           icon:
           icon_color:
@@ -211,9 +212,9 @@ _structures:
                   url: https://www.ihg.com/holidayinnresorts/hotels/id/in/bintan/bnibl/hoteldetail
           style: blue          
           card-style: base
-      - label: sticky-gallery
+      - label: sticky gallery
         picker_preview:
-          text: sticky-gallery
+          text: sticky gallery
           subtext:
           icon:
           icon_color:
@@ -248,6 +249,7 @@ _structures:
                       alt: >-
                           Private celebration dinner setup at beachfront SugarBEATS Bintan
                           event venue
+          style: base
       - label: form
         picker_preview:
           text: form
@@ -325,6 +327,7 @@ _structures:
                           - 
                               image: /uploads/stix-4.jpg
                               alt: Open kitchen counter seating with pendant lights and chef at grill station, Stix Bintan
+          style: text-rust
       - label: full height text section
         picker_preview:
           text: full height text section

@@ -1044,10 +1044,6 @@ body svg,body img {
   background-color: var(--cream);
 }
 
-.bg-lightblue {
-  background-color: var(--light-blue);
-}
-
 .bg-yellow {
   background-color: var(--yellow);
 }
