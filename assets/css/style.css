@@ -1282,14 +1282,6 @@ body svg,body img {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.placeholder\:text-blue::-moz-placeholder {
-  color: var(--blue);
-}
-
-.placeholder\:text-blue::placeholder {
-  color: var(--blue);
-}
-
 @media (min-width: 640px) {
   .sm\:flex {
     display: flex;

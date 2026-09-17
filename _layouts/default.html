@@ -8,7 +8,30 @@
     <link rel="stylesheet" href="https://use.typekit.net/emv3zig.css">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="stylesheet" href="/editor.css">
+    <style>
 
+        {% for style in site.data.style.color-themes %}
+        .style-{{style.name}} {
+            background-color: {{style.background-color}};
+            color: {{style.text-color}};
+        }
+
+        .style-{{style.name}} input,
+        .style-{{style.name}} textarea,
+        .style-{{style.name}} input::placeholder,
+        .style-{{style.name}} textarea::placeholder {
+            border-color: {{style.text-color}};
+            background-color: {{style.background-color}};
+            color: {{style.text-color}};
+        }
+
+        .style-{{style.name}} button {
+            background-color: {{style.text-color}};
+            color: {{style.background-color}};
+        }
+
+        {% endfor %}
+    </style>
     
     <link rel="icon" type="image/x-icon" href="{{page.seo.favicon | default: site.data.seo.favicon_image}}">
     

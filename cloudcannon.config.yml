@@ -72,7 +72,32 @@ _structures:
           video-type: mp4
           text-image: /uploads/celebrate-in-bintan.svg
           bg-image: /uploads/wedding.jpg
+          height: 60      
+          style: base
+      - label: video banner with boarder
+        picker_preview:
+          text: video banner with boarder
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: 
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: banner-video-bordered
+          bg-video: /uploads/sugarbeats-website-5000kb.mp4
+          video-type: mp4
+          heading-stacked:
+              - Bintan's
+              - Favourite
+              - Beach Club.
           height: 60
+          style: blue
       - label: video between two headings
         picker_preview:
           text: video between two headings
@@ -184,6 +209,8 @@ _structures:
                   description: Spacious and serene, this room features a private balcony and
                       outdoor bathtub overlooking the ocean.
                   url: https://www.ihg.com/holidayinnresorts/hotels/id/in/bintan/bnibl/hoteldetail
+          style: blue          
+          card-style: base
       - label: sticky-gallery
         picker_preview:
           text: sticky-gallery
@@ -239,6 +266,7 @@ _structures:
           _id: form
           heading: Get in touch
           bg-image: /uploads/Home-1.jpg
+          style: base
       - label: slideshow grid
         picker_preview:
           text: slideshow grid
@@ -322,3 +350,4 @@ _structures:
               </h2>
                   <p class="constrained">Set on one of Bintan’s most stunning stretches of beach, SugarBEATS blends ocean views, curated music, and elevated dining into one unforgettable experience. By day, unwind by the water. By night, let the music move you. </p>
           bg-image: /uploads/palm-trees.jpg
+          style: base

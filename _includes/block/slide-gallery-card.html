@@ -1,5 +1,5 @@
 
-<section class="bg-blue text-cream px-0">
+<section class="style-{{block.style}} text-cream px-0">
     <div class="max-w-screen-xl mx-auto p-[5%]">
         <div class="flex justify-between items-center">
             <h2 class="text-lg heading-caps">
@@ -13,7 +13,7 @@
     <div>
         <div class="flex flex-nowrap overflow-x-scroll gap-8 px-[var(--side-gap)]">
             {% for item in block.cards %}
-            <a href="{{item.url}}" class="rounded-3xl overflow-hidden bg-cream text-blue shrink-0 w-4/5 sm:w-2/5 lg:w-1/4">
+            <a href="{{item.url}}" class="rounded-3xl overflow-hidden style-{{block.card-style}} shrink-0 w-4/5 sm:w-2/5 lg:w-1/4">
                 <div class="relative overflow-hidden aspect-square round-t-3xl">
                     <img class="absolute inset-0 h-full w-full object-cover" src="{{item.image}}" alt="{{image.alt}}" />
                 </div>
